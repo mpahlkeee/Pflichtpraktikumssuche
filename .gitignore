@@ -1,0 +1,16 @@
+# Python Cache
+__pycache__/
+
+# Python Virtual Environment
+venv/
+
+# Flask Datenbank und lokale Konfiguration
+instance/
+
+# Umgebungsvariablen und Passwörter
+.env
+
+# macOS Systemdateien
+.DS_Store
+
+

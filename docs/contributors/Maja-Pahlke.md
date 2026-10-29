@@ -1,29 +1,24 @@
 [← Contributors](README.md)
 
-> [!CAUTION]
-> Create a separate, individual file for every team member, proposed naming scheme: `📄firstname-lastname.md`.
->
-> *Find and replace* (VS Code: <kbd>Ctrl</kbd>+<kbd>H</kbd> / <kbd>⌘</kbd>+<kbd>H</kbd>) `Jane Dane` with the student's name. On this template page, you will find this name 3 times (including in this `!CAUTION` box). 
->
-> You may delete this `!CAUTION` box.
-
 # Maja Pahlke
 
 ## Meta-Goals
 
-### Target grade
-
-[State your target grade for this module. This is meant as a signal to your fellow team members.]
+1,0
 
 ### Personal goals
 
-[State your personal goals regarding this Module, to create transparency among the team members.]
+Mein Ziel ist es, im Modul Full-Stack Web Development ein fundiertes Verständnis für die Entwicklung einer vollständigen Webanwendung zu erlangen und dieses Wissen praktisch anzuwenden.
 
----
+* Meine Kenntnisse in Python, Flask, HTML und CSS erweitern.
+* Lernen, wie Frontend, Backend und Datenbank innerhalb einer Webanwendung zusammenarbeiten.
+* Erfahrungen mit der Zusammenarbeit über Git und GitHub sammeln.
+* Technische Entscheidungen treffen und dokumentieren.
+* Eigenständig Verantwortung für die Entwicklung und Umsetzung eines vollständigen Features übernehmen.
 
 ## Eidesstattliche Erklärung
 
-**[Jane Dane, Matrikelnr.: 1234567]**
+**[Maja Pahlke, Matrikelnr.: 77208703644]**
 
 Ich erkläre an Eides statt:
 
@@ -61,7 +56,7 @@ Next, provide a **step-by-step walkthrough** of owned vertical feature(s) that e
 
 ## Portfolio Ownership
 
-[Indicate your [Portfolio Ownership](https://hwrberlin.github.io/fswd/assessment.html#vertical-feature-and-portfolio-ownership). Usually, it will be sufficicent to just write something like: "I owned Portfolio **B** in our **4-person** team."
+I owned Portfolio **C** in our **4-person** team.
 
 **In addition**, supply ample proof of ownership, primarily through work diary entries, git commit traces, and other useful artifacts. Maintain a table like this.]
 

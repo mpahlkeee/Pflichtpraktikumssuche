@@ -12,18 +12,18 @@
 ## Meta-Goals
 
 ### Target grade
-
-[State your target grade for this module. This is meant as a signal to your fellow team members.]
+Ich strebe die Note 1,3 an, da ich damit sehr zufrieden wäre und weiß, dass der Kurs anspruchsvoll ist, da wir zum ersten mal Python benutzen.
 
 ### Personal goals
+Meine persönlichen Ziele für dieses Modul sind, meine Programmierkenntnisse zu verbessern und zu lernen wie man vollständige Webanwendungen entwickelt. Ich möchte sowohl die Frontend- als auch die Backend-Entwicklung besser verstehen und praktische Erfahrungen mit Datenbanken und APIs sammeln. 
 
-[State your personal goals regarding this Module, to create transparency among the team members.]
+Ein weiteres Ziel ist es, Git und GitHub sicher zu nutzen, um meinen Code zu verwalten, Änderungen nachzuverfolgen und die Zusammenarbeit im Team zu erleichtern.
 
----
+Außerdem möchte ich meine Problemlösungsfähigkeiten verbessern und lernen, effektiv im Team zusammenzuarbeiten.
 
 ## Eidesstattliche Erklärung
 
-**[Jane Dane, Matrikelnr.: 1234567]**
+**[Lea Karadas, Matrikelnr.: 77202285794]**
 
 Ich erkläre an Eides statt:
 

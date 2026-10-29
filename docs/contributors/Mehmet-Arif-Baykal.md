@@ -1,6 +1,6 @@
 [← Contributors](README.md)
 
-# Maja Pahlke
+# Mehmet Arif Baykal
 
 ## Meta-Goals
 
@@ -8,17 +8,16 @@
 
 ### Personal goals
 
-Mein Ziel ist es, im Modul Full-Stack Web Development ein fundiertes Verständnis für die Entwicklung einer vollständigen Webanwendung zu erlangen und dieses Wissen praktisch anzuwenden.
+Ich strebe eine Note zwischen 1,0 und 1,3 an. Mein Vorwissen aus der objektorientierten Programmierung und Datenbanken möchte ich nun ganz praktisch auf Python und die Full-Stack-Entwicklung anwenden, um mit dem Team ein starkes Projekt abzuliefern.
 
-* Meine Kenntnisse in Python, Flask, HTML und CSS erweitern.
-* Lernen, wie Frontend, Backend und Datenbank innerhalb einer Webanwendung zusammenarbeiten.
-* Erfahrungen mit der Zusammenarbeit über Git und GitHub sammeln.
-* Technische Entscheidungen treffen und dokumentieren.
-* Eigenständig Verantwortung für die Entwicklung und Umsetzung eines vollständigen Features übernehmen.
+Persönliche Ziele
+Als angehender IT-Berater möchte ich lernen, die Brücke zwischen fachlichen Anforderungen und der technischen Code-Umsetzung zu schlagen. Mir ist wichtig, den kompletten Aufbau einer Web-App – vom Backend bis zum Frontend – wirklich zu begreifen.
+
+Zudem will ich meine Fähigkeiten als Projektkoordinator ausbauen: Dazu gehört ein professioneller Git-Workflow und die praktische Erfahrung, wie man ein Entwicklerteam effizient organisiert und gemeinsam pragmatisch ans Ziel kommt.
 
 ## Eidesstattliche Erklärung
 
-**[Maja Pahlke, Matrikelnr.: 77208703644]**
+**Mehmet Arif Baykal 77206279775**
 
 Ich erkläre an Eides statt:
 

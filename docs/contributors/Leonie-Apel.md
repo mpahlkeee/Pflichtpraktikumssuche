@@ -13,17 +13,22 @@
 
 ### Target grade
 
-[State your target grade for this module. This is meant as a signal to your fellow team members.]
+Ich strebe die Note 1,3 an. Ich erwarte keine 1,0, da ich zu ersten Mal die Programme, sowie Python nutze. Ich bin aber zuversichtlich, dass wir uns gut einarbeiten können.
 
 ### Personal goals
 
-[State your personal goals regarding this Module, to create transparency among the team members.]
+Ich möchte die Grundlagen der Full-Stack-Webentwicklung kennenlernen und verstehen, wie Frontend, Backend und Datenbanken zusammenarbeiten. Dabei möchte ich praktische Erfahrungen in der Entwicklung von Webanwendungen sammeln und nachvollziehen, wie diese aufgebaut sind und funktionieren.
+
+Ein besonderer Schwerpunkt liegt für mich auf dem Umgang mit Git und Github. Ich möchte lernen, Versionskontrolle sicher anzuwenden, Änderungen nachzuverfolgen, Branches zu erstellen und mit anderen Personen gemeinsam an Projekten zu arbeiten. Mein Ziel ist es, Git und GitHub auch in zukünftigen Projekten selbstständig und sicher einsetzen zu können.
+
+Auch wenn ich später  nicht direkt in der Full-Stack-Entwicklung arbeiten möchte, halte ich es für wichtig, die grundlegenden Prinzipien der Webentwicklung zu verstehen. Dadurch möchte ich mein technisches Verständnis erweitern, meine Programmierkenntnisse vertiefen und besser nachvollziehen können, wie Softwareprojekte strukturiert und umgesetzt werden.
+
 
 ---
 
 ## Eidesstattliche Erklärung
 
-**[Jane Dane, Matrikelnr.: 1234567]**
+**Leonie Apel, 77207691939**
 
 Ich erkläre an Eides statt:
 

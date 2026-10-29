@@ -14,7 +14,8 @@ Praktify konzentriert sich ausschließlich auf Pflichtpraktika in Berlin. Das Zi
 
 
 
-![attractive app screenshot]
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/c323708b-57c6-414f-94e3-5aab40bcfee3" />
+
 ---
 
 ## Documentation Contents

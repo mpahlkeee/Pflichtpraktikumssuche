@@ -66,7 +66,7 @@ Next, provide a **step-by-step walkthrough** of owned vertical feature(s) that e
 
 ## Portfolio Ownership
 
-[Indicate your [Portfolio Ownership](https://hwrberlin.github.io/fswd/assessment.html#vertical-feature-and-portfolio-ownership). Usually, it will be sufficicent to just write something like: "I owned Portfolio **B** in our **4-person** team."
+Ich mache Portfolio D in unserem 4-Personen Team.
 
 **In addition**, supply ample proof of ownership, primarily through work diary entries, git commit traces, and other useful artifacts. Maintain a table like this.]
 

@@ -28,7 +28,7 @@ Auch wenn ich später  nicht direkt in der Full-Stack-Entwicklung arbeiten möch
 
 ## Eidesstattliche Erklärung
 
-**Leonie Apel, 77207691939**
+**[Leonie Apel, Matrikelnr.: 77207691939]**
 
 Ich erkläre an Eides statt:
 

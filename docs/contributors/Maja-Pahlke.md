@@ -56,7 +56,7 @@ Next, provide a **step-by-step walkthrough** of owned vertical feature(s) that e
 
 ## Portfolio Ownership
 
-I owned Portfolio **C** in our **4-person** team.
+Ich mache Portfolio **C** in unserem **4-Person** Team.
 
 **In addition**, supply ample proof of ownership, primarily through work diary entries, git commit traces, and other useful artifacts. Maintain a table like this.]
 

@@ -43,5 +43,8 @@ Illustrate the typical successful interaction with your platform from both user 
 ---
 
 ## Initial Target Scope (as per Assignment)
+<img width="2182" height="3086" alt="UI-1" src="https://github.com/user-attachments/assets/576a4d16-8352-4fe4-b443-a7405070df5d" />
+<img width="2182" height="3086" alt="UI-2" src="https://github.com/user-attachments/assets/b3978467-63ef-479a-a096-df170e9d4691" />
 
-[Include your visual scoping of the web app (e.g., UI screens scribbles), as elaborated for your Assignment at start of the project.]
+
+

@@ -209,8 +209,8 @@ Durch die Spezialisierung auf BWL-Studierende in Berlin kann das Unternehmen gez
 ---
 
 ## Initial Target Scope (as per Assignment)
-<img width="2182" height="3086" alt="UI-1" src="https://github.com/user-attachments/assets/576a4d16-8352-4fe4-b443-a7405070df5d" />
-<img width="2182" height="3086" alt="UI-2" src="https://github.com/user-attachments/assets/b3978467-63ef-479a-a096-df170e9d4691" />
 
+<img width="2182" height="3086" alt="UI-1" src="https://github.com/user-attachments/assets/70165d24-e81a-43af-b293-ab622bef385b" />
+<img width="2182" height="3086" alt="UI-2" src="https://github.com/user-attachments/assets/f3a755d7-4eb9-4570-a2fb-039897e7cfba" />
 
 

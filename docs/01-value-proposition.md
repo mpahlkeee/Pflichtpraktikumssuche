@@ -6,7 +6,7 @@
 
 Im Rahmen unserer Product Discovery haben wir uns mit den Herausforderungen rund um die Suche nach Pflichtpraktika beschäftigt. Dabei haben wir uns dafür entschieden, unsere Plattform Praktify auf BWL-Studierende in Berlin zu spezialisieren, die im Rahmen ihres Studiums ein Pflichtpraktikum absolvieren müssen.
 
-Diese Eingrenzung ermöglicht es uns, eine klar definierte Zielgruppe anzusprechen und deren konkrete Bedürfnisse gezielter zu berücksichtigen. Gleichzeitig bietet Berlin als einer der bedeutendsten Wirtschafts- und Startup-Standorte Deutschlands gute Voraussetzungen für eine solche Plattform.
+Diese Eingrenzung ermöglicht es uns, eine klar definierte Zielgruppe anzusprechen und deren konkrete Bedürfnisse gezielter zu berücksichtigen. Im Wintersemester 2025/26 sind insgesamt 13.558 Studierende im Fach BWL an Berliner Hochschulen eingeschrieben, damit ist es das beliebteste Studienfach in Berlin und an den meisten Hochschulen muss dabei im Rahmen der Studienordnung ein Pflichtpraktikum absolviert werden. Gleichzeitig bietet Berlin als einer der bedeutendsten Wirtschafts- und Startup-Standorte Deutschlands gute Voraussetzungen für eine solche Plattform.
 
 Die Unternehmensvielfalt in Berlin bietet BWL-Studierenden zahlreiche Möglichkeiten, praktische Erfahrungen in unterschiedlichen wirtschaftlichen Tätigkeitsfeldern zu sammeln. Dazu gehören beispielsweise Marketing, Personalmanagement, Controlling, Finance, Vertrieb, Einkauf und Projektmanagement. Gleichzeitig macht gerade die große Vielfalt an Unternehmen und Stellenangeboten die Suche nach einem geeigneten Praktikum anspruchsvoll. 
 

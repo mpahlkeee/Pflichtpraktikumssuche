@@ -4,96 +4,162 @@
 
 ## Target Users and Their Problems
 
-Im Rahmen unserer Product Discovery haben wir uns intensiv mit den Akteuren rund um das Thema "Pflichtpraktikum" beschäftigt. Dabei haben wir zwei zentrale Zielgruppen identifiziert, die bei der aktuellen Marktlage und den bestehenden Jobportalen auf erhebliche Hürden stoßen.
+Im Rahmen unserer Product Discovery haben wir uns mit den Herausforderungen rund um die Suche nach Pflichtpraktika beschäftigt. Dabei haben wir uns dafür entschieden, unsere Plattform Praktify auf BWL-Studierende in Berlin zu spezialisieren, die im Rahmen ihres Studiums ein Pflichtpraktikum absolvieren müssen.
 
+Diese Eingrenzung ermöglicht es uns, eine klar definierte Zielgruppe anzusprechen und deren konkrete Bedürfnisse gezielter zu berücksichtigen. Gleichzeitig bietet Berlin als einer der bedeutendsten Wirtschafts- und Startup-Standorte Deutschlands gute Voraussetzungen für eine solche Plattform.
 
-### Demand Side: Studierende (auf der Suche nach einem Pflichtpraktikum)
+Die Unternehmensvielfalt in Berlin bietet BWL-Studierenden zahlreiche Möglichkeiten, praktische Erfahrungen in unterschiedlichen wirtschaftlichen Tätigkeitsfeldern zu sammeln. Dazu gehören beispielsweise Marketing, Personalmanagement, Controlling, Finance, Vertrieb, Einkauf und Projektmanagement. Gleichzeitig macht gerade die große Vielfalt an Unternehmen und Stellenangeboten die Suche nach einem geeigneten Praktikum anspruchsvoll. 
 
-**Wer sind sie?**
-Studierende, die durch ihre Studienordnung (wie z. B. an der HWR Berlin) dazu verpflichtet sind, ein Praxissemester zu absolvieren. Sie bringen harte formale Rahmenbedingungen mit, wie etwa ein exakt definiertes Zeitfenster und einen festen Startzeitpunkt im Semester.
+Anstatt eine weitere allgemeine Praktikumsplattform zu entwickeln, möchten wir ein konkretes Problem einer klar definierten Zielgruppe lösen. Durch die Konzentration auf BWL-Studierende in Berlin können wir die Stellenangebote gezielt auf betriebswirtschaftliche Tätigkeitsbereiche und die besonderen Anforderungen eines Pflichtpraktikums ausrichten.
 
-**Ihre konkreten Probleme:**
-* **Filter-Lücke:** Klassische Jobbörsen wie LinkedIn oder Stepstone sind primär auf reguläre Jobs ausgelegt. Es fehlen smarte Filtermöglichkeiten für die strengen universitären Vorgaben.
-* **Zeitverschwendung & Frustration:** Studierende investieren oft viel Zeit in individuelle Anschreiben, nur um dann im Vorstellungsgespräch zu erfahren, dass das Unternehmen die zeitlichen oder inhaltlichen Vorgaben der Hochschule gar nicht erfüllen kann.
-* **Intransparenz:** Es ist bei vielen Stellenanzeigen nicht erkennbar, ob sie sich explizit an Pflichtpraktikanten richten und ob die Rahmenbedingungen passen.
-
-
-
-### Supply Side: Unternehmen
+### Demand Side: BWL-Studierende in Berlin (auf der Suche nach einem Pflichtpraktikum)
 
 **Wer sind sie?**
-Recruiter und Fachabteilungen, die ein starkes Interesse daran haben, gezielt Pflichtpraktikanten einzustellen. Das liegt einerseits am frühzeitigen Recruiting von Nachwuchstalenten, andererseits an rechtlichen und finanziellen Rahmenbedingungen.
+
+Unsere primäre Zielgruppe sind BWL-Studierende an Berliner Hochschulen, die aufgrund ihrer Studienordnung verpflichtet sind, ein Praktikum zu absolvieren. Sie suchen einen Praktikumsplatz in Berlin, der sowohl zu ihren fachlichen Interessen als auch zu den formalen Vorgaben ihrer Hochschule passt.
+
+Dabei kommen unterschiedliche betriebswirtschaftliche Tätigkeitsbereiche infrage, beispielsweise:
+
+* Marketing und Vertrieb
+* Finance und Accounting
+* Controlling und Rechnungswesen
+* Personalmanagement (HR)
+* Business Development
+* Einkauf und Supply Chain Management
+* Projektmanagement und Unternehmensberatung
 
 **Ihre konkreten Probleme:**
-* **Begrenzte Reichweite:** Unternehmen veröffentlichen Praktikumsstellen häufig auf allgemeinen Jobportalen und erreichen dadurch nicht immer gezielt Studierende, die aktiv ein Pflichtpraktikum suchen.
 
-* **Unpassende Bewerbungen:** Allgemeine Praktikumsausschreibungen sprechen auch Personen an, die beispielsweise ein freiwilliges Praktikum oder eine Werkstudententätigkeit suchen.
+- **Fehlende Spezialisierung:** Allgemeine Jobportale wie LinkedIn oder Stepstone bieten zahlreiche Praktikumsstellen, sind jedoch nicht speziell auf BWL-Pflichtpraktika ausgerichtet. Studierende müssen viele Angebote selbst nach ihrer fachlichen Eignung durchsuchen.
 
-* **Zusätzlicher Prüfungsaufwand:** Unternehmen müssen eingehende Bewerbungen individuell prüfen, um festzustellen, ob die Bewerber tatsächlich ein Pflichtpraktikum absolvieren müssen und ob deren Verfügbarkeit zu den Anforderungen der Stelle passt.
+- **Schwierigkeit, passende Stellen zu finden:** Betriebswirtschaftliche Praktika werden unter unterschiedlichen Stellenbezeichnungen veröffentlicht. Dadurch ist es teilweise schwierig, passende Angebote zu erkennen, insbesondere wenn diese nicht ausdrücklich als BWL-Praktikum gekennzeichnet sind.
 
-* **Fehlende Spezialisierung:** Es fehlt eine zentrale Plattform, die sich gezielt auf Pflichtpraktika konzentriert und Unternehmen den Zugang zu dieser spezifischen Zielgruppe erleichtert.
+- **Unklare Eignung als Pflichtpraktikum:** Bei vielen Stellenanzeigen ist nicht eindeutig erkennbar, ob das Unternehmen Pflichtpraktikanten einstellt und ob die angebotene Stelle die Anforderungen der jeweiligen Hochschule erfüllt.
+
+- **Unterschiedliche Hochschulvorgaben:** Je nach Hochschule und Studiengang unterscheiden sich die Anforderungen hinsichtlich Praktikumsdauer, Zeitraum und fachlicher Ausrichtung. Studierende müssen deshalb häufig selbst überprüfen, ob eine Stelle für ihr Pflichtpraktikum geeignet ist.
+
+- **Zeitaufwendige Suche:** Praktikumsangebote sind auf zahlreichen Jobportalen und Unternehmenswebsites verteilt. Studierende müssen verschiedene Plattformen durchsuchen und viele Stellenanzeigen einzeln überprüfen. Das führt zu einem hohen Zeitaufwand.
+
+- **Fehlende Orientierung:** Durch die große Auswahl an betriebswirtschaftlichen Tätigkeitsfeldern fällt es nicht immer leicht, ein Praktikum zu finden, das sowohl den eigenen Interessen als auch den beruflichen Vorstellungen entspricht.
+
+### Supply Side: Unternehmen in Berlin
+
+**Wer sind sie?**
+
+Unsere zweite Zielgruppe sind Unternehmen mit Standort in Berlin, die Praktikumsplätze in betriebswirtschaftlichen Bereichen anbieten und gezielt BWL-Studierende erreichen möchten. Dazu gehören sowohl etablierte Unternehmen und mittelständische Betriebe als auch Startups und Scaleups aus unterschiedlichen Branchen.
+
+Insbesondere in einer wirtschaftlich vielfältigen Stadt wie Berlin besteht Bedarf an Nachwuchskräften für in jeglichen betriebswirtschaftlichen Bereichen.
+
+**Ihre konkreten Probleme:**
+
+- **Begrenzte Reichweite:** Unternehmen veröffentlichen ihre Praktikumsstellen häufig auf allgemeinen Jobportalen. Dadurch erreichen sie nicht immer gezielt BWL-Studierende, die aktiv ein Pflichtpraktikum suchen.
+
+- **Unpassende Bewerbungen:** Allgemeine Praktikumsausschreibungen sprechen unterschiedliche Zielgruppen an. Unternehmen erhalten dadurch möglicherweise Bewerbungen von Personen, deren Studienrichtung oder Praktikumsart nicht zu den Anforderungen der Stelle passt.
+
+- **Zusätzlicher Prüfungsaufwand:** Unternehmen müssen eingehende Bewerbungen individuell prüfen, um festzustellen, ob die Bewerber tatsächlich ein Pflichtpraktikum absolvieren müssen und ob der gewünschte Zeitraum zu den Anforderungen der Stelle passt.
+
+- **Fehlende Spezialisierung:** Es fehlt eine zentrale Plattform, über die Unternehmen gezielt BWL-Studierende in Berlin erreichen können, die ein Pflichtpraktikum suchen.
 
 
 ## Our Platform Solution
 
-Unsere Plattform hat das Ziel, die Suche nach Pflichtpraktika in Berlin einfacher und effizienter zu gestalten. Sie bringt Studierende, die ein Pflichtpraktikum suchen, und Unternehmen, die entsprechende Praktikumsstellen anbieten, zusammen. Dafür werden Stellenanzeigen an einem zentralen Ort gebündelt. Studierende können ein persönliches Profil mit Angaben zu ihrem Studiengang, ihren Fähigkeiten und Interessen erstellen. Auf dieser Grundlage werden ihnen passende Praktikumsstellen empfohlen. Unternehmen erhalten gleichzeitig die Möglichkeit, ihre Pflichtpraktikumsstellen zu veröffentlichen und gezielt Studierende zu erreichen.
+Unsere Plattform Praktify hat das Ziel, die Suche nach betriebswirtschaftlichen Pflichtpraktika in Berlin einfacher und effizienter zu gestalten. Sie bringt BWL-Studierende, die ein Pflichtpraktikum suchen, und Unternehmen, die entsprechende Praktikumsstellen anbieten, zusammen.
 
+Dafür werden relevante Stellenanzeigen an einem zentralen Ort gebündelt, die Angebote stammen sowohl aus einer angebundenen Job-API als auch von Unternehmen, die ihre Praktikumsstellen direkt auf Praktify veröffentlichen.
+
+Studierende können ein filtern nach beispielsweise ihren Fähigkeiten, Interessen und ihrem gewünschten Praktikumszeitraum. Auf dieser Grundlage werden ihnen passende Praktikumsstellen vorgeschlagen.
+
+Der Fokus liegt auf der Ausrichtung der Stellenangebote auf betriebswirtschaftliche Tätigkeitsbereiche und die Anforderungen von Pflichtpraktika. Dadurch müssen Studierende weniger Zeit mit der Suche nach fachfremden oder ungeeigneten Angeboten verbringen.
+
+Unternehmen erhalten gleichzeitig die Möglichkeit, ihre Pflichtpraktikumsstellen zu veröffentlichen und gezielt BWL-Studierende in Berlin anzusprechen.
 
 ### Solution for the Demand Side
 
-Unsere Plattform richtet sich auf der Nachfrageseite an Studierende, die ein Pflichtpraktikum in Berlin suchen. Das Problem besteht darin, dass sie auf verschiedenen Plattformen nach geeigneten Stellen suchen müssen und dabei viel Zeit verlieren. Praktify löst dieses Problem, indem die Praktikumsangebote an einem zentralen Ort gesammelt werden. Zusätzlich können Studierende einen vorgegebenen Lebenslauf mit Angaben zu ihrem Studiengang, ihren Fähigkeiten und Interessen ausfüllen. Anhand dieser Informationen werden ihnen passende Stellen empfohlen, sodass sie weniger Zeit mit der Suche nach ungeeigneten Angeboten verbringen. Interessante Stellen können außerdem als Favoriten gespeichert und später wieder aufgerufen werden. Über direkte Links zu den Unternehmensseiten gelangen die Studierenden anschließend zur jeweiligen Bewerbung.
+Unsere Plattform richtet sich auf der Nachfrageseite an BWL-Studierende in Berlin, die ein Pflichtpraktikum suchen.
+
+Das Problem besteht darin, dass sie auf verschiedenen Plattformen nach geeigneten Stellen suchen müssen und dabei viel Zeit verlieren. Praktify löst dieses Problem, indem relevante Praktikumsangebote aus betriebswirtschaftlichen Bereichen an einem zentralen Ort gesammelt werden.
+
+Die Angebote können nach verschiedenen Kriterien durchsucht und gefiltert werden, beispielsweise nach Tätigkeitsbereich, Praktikumsdauer und Standort innerhalb Berlins.
+
+Interessante Stellen können als Favoriten gespeichert und später erneut aufgerufen werden. Über direkte Links zu den Unternehmensseiten gelangen die Studierenden anschließend zum jeweiligen Bewerbungsprozess.
+
+Dadurch wird die Suche nach einem geeigneten Pflichtpraktikum übersichtlicher und der Aufwand für die Recherche auf verschiedenen Plattformen reduziert.
 
 ### Solution for the Supply Side
 
-Auf der Angebotsseite richtet sich unsere Plattform an Unternehmen, die Pflichtpraktikumsstellen anbieten und geeignete Studierende erreichen möchten. Sie können ihre eigenen Stellenanzeigen auf Praktify veröffentlichen und verwalten. Dadurch erhalten sie eine zusätzliche Möglichkeit, ihre Angebote gezielt einer Zielgruppe zu präsentieren, die aktiv nach einem Pflichtpraktikum sucht. Gleichzeitig werden ihre Stellenanzeigen in einer zentralen Übersicht gesammelt und können von interessierten Studierenden leichter gefunden werden. So erleichtert die Plattform Unternehmen die Sichtbarkeit ihrer Praktikumsangebote und bringt sie mit potenziell passenden Studierenden zusammen.
+Auf der Angebotsseite richtet sich unsere Plattform an Unternehmen in Berlin, die Pflichtpraktikumsstellen in betriebswirtschaftlichen Bereichen anbieten und geeignete Studierende erreichen möchten.
+
+Unternehmen können ihre eigenen Stellenanzeigen auf Praktify veröffentlichen und verwalten. Dabei können sie relevante Informationen zur Praktikumsstelle hinterlegen, beispielsweise:
+
+* Stellenbezeichnung und Tätigkeitsbereich
+* Aufgabenbeschreibung
+* Anforderungen und gewünschte Qualifikationen
+* Praktikumsdauer und möglicher Startzeitpunkt
+* Standort des Unternehmens
+* Externer Bewerbungslink
+
+Durch die Spezialisierung auf BWL-Studierende in Berlin erhalten Unternehmen eine zusätzliche Möglichkeit, ihre Angebote gezielt einer relevanten Zielgruppe zu präsentieren.
+
+Insbesondere kleinere Unternehmen und Startups können dadurch ihre Praktikumsstellen sichtbar machen und Studierende erreichen, die sich gezielt für betriebswirtschaftliche Tätigkeiten interessieren.
+
+Die Stellenanzeigen werden zentral auf Praktify dargestellt und können von Studierenden über die Such- und Filterfunktionen sowie persönliche Empfehlungen gefunden werden. Die eigentliche Bewerbung erfolgt anschließend über den unternehmenseigenen Bewerbungsprozess.
 
 ## Happy Paths
 
-Die Plattform verbindet beide Seiten, indem Unternehmen ihre Pflichtpraktikumsstellen veröffentlichen und Studierende diese entdecken, vergleichen und sich anschließend direkt beim jeweiligen Unternehmen bewerben können.
+Die Plattform verbindet BWL-Studierende in Berlin, die ein Pflichtpraktikum suchen, mit Unternehmen, die entsprechende Praktikumsplätze anbieten. Die Studierenden können passende Angebote entdecken, vergleichen und sich anschließend direkt beim jeweiligen Unternehmen bewerben. Unternehmen können ihre Stellenanzeigen veröffentlichen, verwalten und gezielt für die definierte Zielgruppe sichtbar machen.
 
-Der eigentliche Bewerbungsprozess findet außerhalb von Praktify auf der jeweiligen Unternehmenswebsite statt. Die Plattform unterstützt somit den gesamten Prozess von der Veröffentlichung einer Praktikumsstelle bis zur Weiterleitung interessierter Studierender zum externen Bewerbungsprozess.
-
+Der eigentliche Bewerbungsprozess findet außerhalb von Praktify auf der jeweiligen Unternehmenswebsite statt. Die Plattform unterstützt somit den Prozess von der Veröffentlichung einer Praktikumsstelle bis zur Weiterleitung interessierter Studierender zum externen Bewerbungsprozess.
 
 ### Demand-Side Happy Path
 
-Ziel: Ein Student möchte ein geeignetes Pflichtpraktikum in Berlin finden und sich auf eine passende Stelle bewerben.
+**Ziel:** Ein BWL-Student möchte ein geeignetes Pflichtpraktikum in Berlin finden und sich auf eine passende Stelle bewerben.
 
 **1. Einstieg – Registrierung und Anmeldung**
 
-Der Student öffnet Praktify. Über die Registrierungsseite wird ein persönliches Konto erstellt, anschließend erfolgt die Anmeldung und der Zugang zur Plattform.
+Der Student oder die Studentin öffnet Praktify. Über die Registrierungsseite wird ein persönliches Konto erstellt, anschließend erfolgt die Anmeldung und der Zugang zur Plattform.
 
-**2. Persönliches Profil erstellen**
+**2. Praktikumsangebote entdecken**
 
-Nach der Anmeldung wird das persönliche Profil aufgerufen. Die Studentin oder der Student füllt den vorgegebenen Lebenslauf aus, dabei werden Informationen zum Studiengang, zu Fähigkeiten, Interessen und zum gewünschten Praktikumszeitraum hinterlegt. Die Angaben werden gespeichert und können bei Bedarf später angepasst werden.
+Anschließend wird die zentrale Stellenübersicht geöffnet. Hier werden verfügbare Pflichtpraktikumsangebote in Berlin aus betriebswirtschaftlichen Tätigkeitsbereichen angezeigt.
 
-**3. Praktikumsangebote entdecken**
+Die Angebote stammen sowohl aus der angebundenen Job-API als auch von Unternehmen, die ihre Stellen direkt auf Praktify veröffentlicht haben.
 
-Anschließend wird die zentrale Stellenübersicht geöffnet, hier werden verfügbare Pflichtpraktikumsangebote in Berlin angezeigt.
-Die Angebote stammen sowohl aus der angebundenen Job-API als auch von Unternehmen, die ihre Stellen direkt auf Praktify veröffentlicht haben. Auf Grundlage des persönlichen Profils werden passende Praktikumsstellen empfohlen.
 
-**4. Stellen suchen und filtern**
+**3. Stellen suchen und filtern**
 
-Die Studentin oder der Student kann die verfügbaren Angebote auch durchsuchen. Mithilfe der Such- und Filterfunktionen lassen sich die Ergebnisse nach relevanten Kriterien eingrenzen, dadurch kann neben den persönlichen Empfehlungen nach weiteren Praktika gesucht werden.
+Die Studierenden können die verfügbaren Angebote selbst durchsuchen. Mithilfe der Such- und Filterfunktionen lassen sich die Ergebnisse nach relevanten Kriterien eingrenzen, beispielsweise:
 
-**5. Details einer Praktikumsstelle ansehen**
+* Betriebswirtschaftlicher Tätigkeitsbereich
+* Praktikumszeitraum und Startzeitpunkt
+* Praktikumsdauer
+* Standort innerhalb Berlins
+* Weitere relevante Anforderungen
 
-Eine interessante Stellenanzeige wird ausgewählt, in der Detailansicht können weitere Informationen zur Stelle eingesehen werden. Dazu gehören beispielsweise die Aufgabenbeschreibung, Anforderungen, der Standort, die Praktikumsdauer und weitere relevante Angaben.
+Dadurch können gezielt Stellen gefunden werden, die sowohl zu den persönlichen Interessen als auch zu den Anforderungen des Pflichtpraktikums passen.
 
-**6. Praktikumsstelle als Favorit speichern (optional)**
+**4. Details einer Praktikumsstelle ansehen**
 
-Um eine Stelle zu einem späteren Zeitpunkt genauer zu betrachten, kann diese als Favorit gespeichert werden. Die gespeicherten Angebote können über den Favoritenbereich erneut aufgerufen werden.
+In der Detailansicht können weitere Informationen zur Stelle eingesehen werden, dazu gehören beispielsweise die Aufgabenbeschreibung, Anforderungen, der Standort, die Praktikumsdauer und weitere relevante Angaben.
 
-**7. Bewerbung starten**
+So können Studierende besser einschätzen, ob die Stelle zu ihrem Profil und ihren Vorstellungen passt.
 
-Nachdem eine passende Praktikumsstelle gefunden wurde, wird der Bewerbungslink angeklickt. Praktify leitet die Studentin oder den Studenten direkt auf die externe Bewerbungsseite des Unternehmens weiter. Dort kann die Bewerbung entsprechend den Vorgaben des Unternehmens eingereicht werden.
+**5. Praktikumsstelle als Favorit speichern (optional)**
+
+Interessante Praktikumsstellen können als Favoriten gespeichert werden, dadurch lassen sich mehrere Angebote vergleichen und zu einem späteren Zeitpunkt erneut aufrufen.
+
+**6. Bewerbung starten**
+
+Wenn eine passende Praktikumsstelle gefunden wurde, wird der hinterlegte Bewerbungslink angeklickt. Praktify leitet die Studierenden direkt auf die externe Bewerbungsseite des Unternehmens weiter, dort kann die Bewerbung entsprechend den Vorgaben des Unternehmens eingereicht werden.
 
 **Erfolgreiches Ergebnis:**
 
-Der Student hat eine passende Pflichtpraktikumsstelle in Berlin gefunden, die relevanten Informationen geprüft und wurde direkt zum Bewerbungsprozess des Unternehmens weitergeleitet. Die Suche über verschiedene allgemeine Jobportale wird dadurch reduziert und übersichtlicher gestaltet.
+Die Studierenden haben eine passende Pflichtpraktikumsstelle in Berlin gefunden, die relevanten Informationen geprüft und wurden direkt zum Bewerbungsprozess des Unternehmens weitergeleitet.
+
+Durch die Spezialisierung auf BWL-Pflichtpraktika wird die Suche übersichtlicher gestaltet und der Aufwand für die Recherche auf unterschiedlichen allgemeinen Jobportalen reduziert.
 
 ### Supply-Side Happy Path
 
-Ziel: Ein Unternehmen möchte eine Pflichtpraktikumsstelle auf Praktify veröffentlichen, verwalten und gezielt für Studierende sichtbar machen.
+**Ziel:** Ein Unternehmen in Berlin möchte eine Pflichtpraktikumsstelle im betriebswirtschaftlichen Bereich auf Praktify veröffentlichen, verwalten und gezielt für BWL-Studierende sichtbar machen.
 
 **1. Einstieg – Unternehmensbereich aufrufen**
 
@@ -101,11 +167,22 @@ Das Unternehmen öffnet Praktify. Über den Unternehmensbereich erfolgt die Regi
 
 **2. Unternehmensprofil verwalten**
 
-Im Unternehmensbereich kann das Unternehmen sein Profil erstellen und verwalten. Hierbei kann der Name, eine Beschreibung des Unternehmens und ein Bild hinzugefügt werden, um den Studierenden ein Überblick über das Unternehmen zu geben.
+Im Unternehmensbereich kann das Unternehmen sein Profil erstellen und verwalten. Hierbei können der Unternehmensname, eine Beschreibung des Unternehmens und ein Unternehmensbild beziehungsweise Logo hinzugefügt werden.
+
+Dadurch erhalten Studierende einen ersten Überblick über das Unternehmen und dessen Tätigkeitsbereiche.
 
 **3. Neue Praktikumsstelle erstellen**
 
-Im Unternehmensbereich kann eine neue Stellenanzeige veröffentlicht werden. Das Unternehmen kann hierbei die relevanten Informationen zur Praktikumsstelle eintragen, dazu gehören beispielsweise: Stellenbezeichnung und Beschreibung, Aufgaben und Anforderungen, Praktikumsdauer und gewünschter Zeitraum, Voraussetzungen für Bewerber, Externer Bewerbungslink. Nach der Bestätigung wird die Stellenanzeige auf Praktify veröffentlicht, sie erscheint anschließend in der zentralen Stellenübersicht und kann von Studierenden gefunden werden.
+Im Unternehmensbereich kann eine neue Stellenanzeige veröffentlicht werden. Das Unternehmen trägt die relevanten Informationen zur Praktikumsstelle ein. Dazu gehören beispielsweise:
+
+* Stellenbezeichnung und Beschreibung
+* Betriebswirtschaftlicher Tätigkeitsbereich
+* Aufgaben und Anforderungen
+* Praktikumsdauer und gewünschter Zeitraum
+* Voraussetzungen für Bewerber
+* Externer Bewerbungslink
+
+Nach der Bestätigung wird die Stellenanzeige auf Praktify veröffentlicht und erscheint anschließend in der zentralen Stellenübersicht.
 
 **4. Veröffentlichte Stellen verwalten**
 
@@ -113,16 +190,21 @@ Das Unternehmen kann seine veröffentlichten Praktikumsstellen im Unternehmensbe
 
 **5. Studierende erreichen**
 
-Die veröffentlichte Stellenanzeige wird für Studierende sichtbar. Interessierte Studierende können die Anzeige über die Stellenübersicht, die Such- und Filterfunktionen oder ihre persönlichen Empfehlungen entdecken, sie können die Details der Stelle aufrufen und die Anforderungen überprüfen.
+Die veröffentlichte Stellenanzeige wird für BWL-Studierende in Berlin sichtbar.
+
+Interessierte Studierende können die Anzeige über die Stellenübersicht, die Such- und Filterfunktionen oder ihre persönlichen Empfehlungen entdecken, sie können die Details der Stelle aufrufen und die Anforderungen überprüfen.
 
 **6. Bewerbung durch interessierte Studierende**
 
-Interessierte Studierende klicken auf den hinterlegten Bewerbungslink, die werden zur externen Bewerbungsseite des Unternehmens weitergeleitet. Dort reichen sie ihre Bewerbung direkt beim Unternehmen ein, das Unternehmen kann die eingehenden Bewerbungen anschließend über seinen eigenen Bewerbungsprozess bearbeiten.
+Interessierte Studierende klicken auf den hinterlegten Bewerbungslink und werden zur externen Bewerbungsseite des Unternehmens weitergeleitet.
+
+Dort reichen sie ihre Bewerbung direkt beim Unternehmen ein, das Unternehmen kann die eingehenden Bewerbungen anschließend über seinen eigenen Bewerbungsprozess bearbeiten.
 
 **Erfolgreiches Ergebnis:**
 
-Das Unternehmen hat seine Pflichtpraktikumsstelle erfolgreich auf Praktify veröffentlicht und für Studierende sichtbar gemacht, die gezielt nach einem Pflichtpraktikum in Berlin suchen. Interessierte Bewerber gelangen über den hinterlegten Link direkt zum unternehmenseigenen Bewerbungsprozess.
+Das Unternehmen hat seine Pflichtpraktikumsstelle erfolgreich auf Praktify veröffentlicht und für eine klar definierte Zielgruppe sichtbar gemacht.
 
+Durch die Spezialisierung auf BWL-Studierende in Berlin kann das Unternehmen gezielt Personen erreichen, die ein Pflichtpraktikum in einem betriebswirtschaftlichen Tätigkeitsbereich suchen. Gleichzeitig erhalten interessierte Studierende einen direkten Zugang zum unternehmenseigenen Bewerbungsprozess.
 
 ---
 

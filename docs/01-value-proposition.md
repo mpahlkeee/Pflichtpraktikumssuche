@@ -18,9 +18,16 @@ Studierende, die durch ihre Studienordnung (wie z. B. an der HWR Berlin) dazu ve
 * **Intransparenz:** Es ist bei vielen Stellenanzeigen nicht erkennbar, ob sie sich explizit an Pflichtpraktikanten richten und ob die Rahmenbedingungen passen.
 
 
-### Supply Side: [User Group]
 
-[Describe who these users are, what they have to offer, and which problem or need motivates them to participate. Again, be specific and grounded in reality.]
+### Supply Side: Unternehmen
+
+**Wer sind sie?**
+Recruiter und Fachabteilungen, die ein starkes Interesse daran haben, gezielt Pflichtpraktikanten einzustellen. Das liegt einerseits am frühzeitigen Recruiting von Nachwuchstalenten, andererseits an rechtlichen und finanziellen Rahmenbedingungen.
+
+**Ihre konkreten Probleme:**
+* **Enormer administrativer Aufwand:** Das Unternehmen muss bei jeder eingehenden Bewerbung mühsam manuell prüfen, ob es sich wirklich um ein Pflichtpraktikum handelt, ob die Studienordnung des Bewerbers zur Stelle passt und ob der Zeitraum mit dem eigenen Projektplan übereinstimmt.
+* **Unpassende Bewerbungen (Spam):** Auf allgemeine Ausschreibungen folgen oft unzählige Bewerbungen von Personen, die eigentlich einen Werkstudentenjob oder ein freiwilliges Praktikum suchen. Diese werden rausgefiltert.
+* **Ineffizientes Matching:** Es fehlt aktuell ein Werkzeug, das sicherstellt, dass die formalen Rahmenbedingungen von Bewerber und Vakanz bereits *vor* dem ersten Kontakt zu 100 % übereinstimmen. Dieser manuelle Filterprozess kostet Unternehmen wertvolle Ressourcen.
 
 ## Our Platform Solution
 

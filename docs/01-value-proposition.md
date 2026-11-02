@@ -31,15 +31,15 @@ Recruiter und Fachabteilungen, die ein starkes Interesse daran haben, gezielt Pf
 
 ## Our Platform Solution
 
-[Briefly describe the purpose of your platform. What brings the two user groups together? What is being offered, requested, or exchanged?]
+Unsere Plattform hat das Ziel, die Suche nach Pflichtpraktika in Berlin einfacher und effizienter zu gestalten. Sie bringt Studierende, die ein Pflichtpraktikum suchen, und Unternehmen, die entsprechende Praktikumsstellen anbieten, zusammen. Dafür werden Stellenanzeigen an einem zentralen Ort gebündelt. Studierende können ein persönliches Profil mit Angaben zu ihrem Studiengang, ihren Fähigkeiten und Interessen erstellen. Auf dieser Grundlage werden ihnen passende Praktikumsstellen empfohlen. Unternehmen erhalten gleichzeitig die Möglichkeit, ihre Pflichtpraktikumsstellen zu veröffentlichen und gezielt Studierende zu erreichen.
+
 
 ### Solution for the Demand Side
 
-[Explain how your application addresses the demand-side users' problem. Why would they choose to use your platform?]
-
+Unsere Plattform richtet sich auf der Nachfrageseite an Studierende, die ein Pflichtpraktikum in Berlin suchen. Das Problem besteht darin, dass sie auf verschiedenen Plattformen nach geeigneten Stellen suchen müssen und dabei viel Zeit verlieren. Praktify löst dieses Problem, indem die Praktikumsangebote an einem zentralen Ort gesammelt werden. Zusätzlich können Studierende einen vorgegebenen Lebenslauf mit Angaben zu ihrem Studiengang, ihren Fähigkeiten und Interessen ausfüllen. Anhand dieser Informationen werden ihnen passende Stellen empfohlen, sodass sie weniger Zeit mit der Suche nach ungeeigneten Angeboten verbringen. Interessante Stellen können außerdem als Favoriten gespeichert und später wieder aufgerufen werden. Über direkte Links zu den Unternehmensseiten gelangen die Studierenden anschließend zur jeweiligen Bewerbung.
 ### Solution for the Supply Side
 
-[Explain how your application addresses the supply-side users' problem. Why would they choose to offer their services, products, or resources through your platform?]
+Auf der Angebotsseite richtet sich unsere Plattform an Unternehmen, die Pflichtpraktikumsstellen anbieten und geeignete Studierende erreichen möchten. Sie können ihre eigenen Stellenanzeigen auf Praktify veröffentlichen und verwalten. Dadurch erhalten sie eine zusätzliche Möglichkeit, ihre Angebote gezielt einer Zielgruppe zu präsentieren, die aktiv nach einem Pflichtpraktikum sucht. Gleichzeitig werden ihre Stellenanzeigen in einer zentralen Übersicht gesammelt und können von interessierten Studierenden leichter gefunden werden. So erleichtert die Plattform Unternehmen die Sichtbarkeit ihrer Praktikumsangebote und bringt sie mit potenziell passenden Studierenden zusammen.
 
 ## Happy Paths
 

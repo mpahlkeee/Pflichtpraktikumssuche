@@ -2,9 +2,8 @@
 
 # Design Challenge
 
-[State the Design Challenge you eventually tackled, ideally as "How might we help ..." question.]
+Wie können wir BWL-Studenten in Berlin, die ein Pflichtpraktikum absolvieren müssen, dabei helfen, passende Praktikumsstellen zu finden, die sowohl ihren Studienanforderungen als auch ihren persönlichen Interessen entsprechen?
 
----
 
 ## [Raw Material]
 

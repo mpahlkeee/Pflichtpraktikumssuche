@@ -57,4 +57,4 @@ Durch die Eingrenzung auf BWL-Studierende und Unternehmen in Berlin konzentriere
 ## Raw Material
 [Anzahl BWL Studenten Berlin](material/02-up/BWL%20Studenten%20Berlin.png)
 
-[Pflichtpraktika Übersicht Staatlich und Private BWL Studiengänge](material/02up/Pflichtpraktika%20Übersicht%20staatlich%20und%20privat%20.pdf)
+[Pflichtpraktika Übersicht Staatlich und Private BWL Studiengänge in Berlin](material/02-up/Pflichtpraktika%20Übersicht%20staatlich%20und%20privat%20.pdf)

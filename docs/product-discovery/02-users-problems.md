@@ -54,9 +54,6 @@ Durch die Eingrenzung auf BWL-Studierende und Unternehmen in Berlin konzentriere
 
 7. [XING Recruiting – Auf welchen Plattformen schaltet man Stellenanzeigen für Werkstudenten und Praktikanten?](https://recruiting.xing.com/de/ratgeber/auf-welchen-plattformen-schaltet-man-stellenanzeigen-fuer-werkstudenten-und-praktikanten/)
 
-[Raw Material]
+## Raw Material
 
-[List / link / paste any material that you created or referenced while working on identifying your target user(s) and their core problem(s).
-
-Ideally, put any material that you created or collected in the folder 📁 docs/product-discovery/material/02-up/, and link it on this page.]
-
+[Brainstorming Probleme](<docs/product-discovery/material/02-up/Brainstorming Probleme.jpg>)

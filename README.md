@@ -1,3 +1,3 @@
 Pflichtpraktikumssuche
 
-Eine Webanwendung zur vereinfachten Suche nach Pflichtpraktika für Studierende und Unternehmen.
+Eine Webanwendung zur vereinfachten Suche nach Pflichtpraktika für BWL-Studenten in Berlin.

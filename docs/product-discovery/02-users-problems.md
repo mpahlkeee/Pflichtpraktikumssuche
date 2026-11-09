@@ -56,4 +56,4 @@ Durch die Eingrenzung auf BWL-Studierende und Unternehmen in Berlin konzentriere
 
 ## Raw Material
 
-[Brainstorming Probleme](docs/product-discovery/material/02-up/Brainstorming%20Probleme.jpg)
+[Brainstorming Probleme](material/02-up/Brainstorming%20Probleme.jpg)

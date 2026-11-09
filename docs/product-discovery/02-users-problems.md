@@ -55,5 +55,6 @@ Durch die Eingrenzung auf BWL-Studierende und Unternehmen in Berlin konzentriere
 7. [XING Recruiting – Auf welchen Plattformen schaltet man Stellenanzeigen für Werkstudenten und Praktikanten?](https://recruiting.xing.com/de/ratgeber/auf-welchen-plattformen-schaltet-man-stellenanzeigen-fuer-werkstudenten-und-praktikanten/)
 
 ## Raw Material
+[Anzahl BWL Studenten Berlin](material/02-up/BWL%20Studenten%20Berlin.png)
 
-[Brainstorming Probleme](material/02-up/Brainstorming%20Probleme.jpg)
+[Pflichtpraktika Übersicht Staatlich und Private BWL Studiengänge](material/02-up/Pflichtpraktika%20Übersicht%20staatlich%20und%20privat%20.pdf)

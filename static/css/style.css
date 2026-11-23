@@ -1,0 +1,23 @@
+body {
+    background: #f7f8fa;
+    color: #192739;
+    font-family: system-ui, sans-serif;
+    line-height: 1.55;
+}
+
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #dce2e8;
+}
+
+.brand {
+    color: #164f47;
+    font-weight: 700;
+}
+
+h1 {
+    max-width: 25ch;
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    line-height: 1.12;
+}

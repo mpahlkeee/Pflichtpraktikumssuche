@@ -1,17 +1,13 @@
-# Python Cache
 __pycache__/
-
-# Python Virtual Environment
+*.pyc
 venv/
-
-# Flask Datenbank und lokale Konfiguration
 instance/
-
-# Umgebungsvariablen und Passwörter
 .env
-
-# macOS Systemdateien
 .DS_Store
-
-
-venv/
+.tmp/
+*.tmp
+*~
+/database.db-journal
+/database.db-wal
+/database.db-shm
+!/database.db

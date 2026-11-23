@@ -1,3 +1,3 @@
-Pflichtpraktikumssuche
+# Praktify
 
-Eine Webanwendung zur vereinfachten Suche nach Pflichtpraktika für BWL-Studenten in Berlin.
+Lokale Flask-Anwendung für die Suche nach Pflichtpraktika für BWL-Studierende in Berlin.

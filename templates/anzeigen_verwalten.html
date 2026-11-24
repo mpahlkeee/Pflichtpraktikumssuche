@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex flex-wrap justify-content-between
+            align-items-center gap-3 mb-4">
+
+    <h1>Meine Praktikumsanzeigen</h1>
+
+    <a href="{{ url_for('erstellen') }}"
+       class="btn btn-primary">
+        Neue Anzeige erstellen
+    </a>
+
+</div>
+
+
+{% for anzeige in anzeigen %}
+
+    <div class="card mb-4">
+
+        <div class="card-body">
+
+            <h2 class="card-title h4">
+                {{ anzeige.title }}
+            </h2>
+
+            <p class="text-muted">
+                {{ anzeige.location }}
+            </p>
+
+
+            <!-- Tätigkeitsbereiche -->
+
+            <div class="mb-3">
+
+                {% for kategorie in anzeige.categories %}
+
+                    <span class="badge bg-secondary">
+                        {{ kategorie.name }}
+                    </span>
+
+                {% endfor %}
+
+            </div>
+
+
+            <!-- Stellenbeschreibung -->
+
+            <h3 class="h6">Stellenbeschreibung</h3>
+
+            <p>{{ anzeige.description }}</p>
+
+
+            <!-- Anforderungen -->
+
+            <h3 class="h6">Anforderungen</h3>
+
+            <p>{{ anzeige.requirements }}</p>
+
+
+            <!-- Arbeitsmodell -->
+
+            <p>
+                <strong>Arbeitsmodell:</strong>
+
+                {% if anzeige.work_model == "onsite" %}
+                    Vor Ort
+                {% elif anzeige.work_model == "hybrid" %}
+                    Hybrid
+                {% elif anzeige.work_model == "remote" %}
+                    Remote
+                {% endif %}
+            </p>
+
+
+            <!-- Praktikumsbeginn -->
+
+            <p>
+                <strong>Praktikumsbeginn:</strong>
+
+                {% if anzeige.start_date %}
+                    {{ anzeige.start_date.strftime('%d.%m.%Y') }}
+                {% endif %}
+            </p>
+
+
+            <!-- Praktikumsdauer -->
+
+            <p>
+                <strong>Praktikumsdauer:</strong>
+
+                {{ anzeige.duration_months }} Monate
+            </p>
+
+
+            <!-- Vergütung -->
+
+            <p>
+                <strong>Vergütung:</strong>
+
+                {% if anzeige.compensation_status == "paid" %}
+
+                    Bezahlt
+
+                    {% if anzeige.compensation_amount is not none %}
+
+                        – {{ "%.2f"|format(anzeige.compensation_amount)
+                             |replace(".", ",") }} € pro Monat
+
+                    {% endif %}
+
+                {% elif anzeige.compensation_status == "unpaid" %}
+
+                    Unbezahlt
+
+                {% endif %}
+            </p>
+
+
+            <!-- Bewerbungslink -->
+
+            <p>
+                <strong>Bewerbungslink:</strong>
+
+                <a href="{{ anzeige.application_url }}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Zur Bewerbung
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- Aktionen -->
+
+        <div class="card-footer bg-white">
+
+            <div class="d-flex gap-2">
+
+                <a href="{{ url_for(
+                    'bearbeiten',
+                    anzeige_id=anzeige.id
+                ) }}"
+                   class="btn btn-outline-primary">
+
+                    Bearbeiten
+
+                </a>
+
+
+               <a href="{{ url_for(
+                   'loeschen_bestaetigen',
+                     anzeige_id=anzeige.id
+               ) }}"
+             class="btn btn-outline-danger">
+
+            Löschen
+
+             </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% else %}
+
+    <div class="alert alert-info">
+
+        Du hast bisher keine Praktikumsanzeigen erstellt.
+
+    </div>
+
+{% endfor %}
+
+{% endblock %}

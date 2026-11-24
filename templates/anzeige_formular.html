@@ -1,0 +1,74 @@
+{% from 'bootstrap5/form.html' import render_field %}
+
+{{ form.csrf_token }}
+
+{% for error in form.csrf_token.errors %}
+    <div class="alert alert-danger">
+        {{ error }}
+    </div>
+{% endfor %}
+
+
+{{ render_field(form.title) }}
+
+
+<!-- Standort -->
+
+<div class="mb-3">
+
+    <label for="standort" class="form-label">
+        Standort
+    </label>
+
+    <input
+        type="text"
+        id="standort"
+        class="form-control"
+        value="Berlin"
+        readonly
+    >
+
+</div>
+
+
+<!-- Tätigkeitsbereich -->
+
+{{ render_field(form.category_slug) }}
+
+
+<!-- Stellenbeschreibung und Anforderungen -->
+
+{{ render_field(form.description, rows=6) }}
+
+{{ render_field(form.requirements, rows=5) }}
+
+
+<!-- Praktikumsbedingungen -->
+
+{{ render_field(form.work_model) }}
+
+{{ render_field(form.start_date) }}
+
+{{ render_field(form.duration_months, min=1) }}
+
+
+<!-- Vergütung -->
+
+{{ render_field(form.compensation_status) }}
+
+{{ render_field(
+    form.compensation_amount,
+    min="0",
+    max="99999999.99",
+    step="0.01"
+) }}
+
+<div class="form-text mb-3">
+    Bitte nur bei einem bezahlten Praktikum
+    eine Vergütung eingeben.
+</div>
+
+
+<!-- Bewerbungslink -->
+
+{{ render_field(form.application_url, type="url") }}

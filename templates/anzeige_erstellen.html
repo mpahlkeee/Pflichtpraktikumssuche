@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-lg-8">
+
+        <h1 class="mb-4">Praktikumsanzeige erstellen</h1>
+
+        <div class="card">
+
+            <div class="card-body p-4">
+
+                <form action="{{ url_for('erstellen') }}"
+                      method="post">
+
+                    {% include "anzeige_formular.html" %}
+
+                    <div class="d-flex gap-2 mt-4">
+
+                        {{ form.submit(
+                            class="btn btn-primary",
+                            value="Anzeige erstellen"
+                        ) }}
+
+                        <a href="{{ url_for('anzeigen_verwalten') }}"
+                           class="btn btn-secondary">
+                            Abbrechen
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -3,9 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
 
     <title>Pflichtpraktikumssuche</title>
+
+    {{ bootstrap.load_css() }}
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/style.css') }}">
@@ -13,40 +17,84 @@
 
 <body>
 
-    <header>
-        <nav class="navigation">
+    <!-- Navigation -->
 
-            <a href="{{ url_for('index') }}" class="logo">
+    <nav class="navbar navbar-expand-lg bg-light border-bottom">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="{{ url_for('index') }}">
                 Pflichtpraktikumssuche
             </a>
 
-            <div class="nav-links">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navigation"
+                    aria-controls="navigation"
+                    aria-expanded="false"
+                    aria-label="Navigation öffnen">
 
-                <a href="{{ url_for('index') }}">
-                    Startseite
-                </a>
+                <span class="navbar-toggler-icon"></span>
 
-                <a href="{{ url_for('praktika') }}">
-                    Praktika finden
-                </a>
+            </button>
 
-                <a href="{{ url_for('favoriten') }}">
-                    Favoriten
-                </a>
+            <div class="collapse navbar-collapse" id="navigation">
 
-                <a href="{{ url_for('login') }}" class="login-button">
-                    Login
-                </a>
+                <div class="navbar-nav ms-auto">
+
+                    <a class="nav-link" href="{{ url_for('index') }}">
+                        Startseite
+                    </a>
+
+                    <a class="nav-link" href="{{ url_for('praktika') }}">
+                        Praktika
+                    </a>
+
+                    <a class="nav-link" href="{{ url_for('favoriten') }}">
+                        Favoriten
+                    </a>
+
+                    {% if session.get("role") == "company" %}
+
+                        <a class="nav-link"
+                           href="{{ url_for('anzeigen_verwalten') }}">
+                            Meine Anzeigen
+                        </a>
+
+                    {% endif %}
+
+                    <a class="btn btn-primary btn-lg ms-lg-3" href="{{ url_for('login') }}">
+                       Login
+                    </a>
+
+                </div>
 
             </div>
 
-        </nav>
-    </header>
+        </div>
 
-    <main>
+    </nav>
+
+
+    <!-- Seiteninhalt -->
+
+    <main class="container py-4">
+
+        <!-- Erfolgsmeldungen und Fehlermeldungen -->
+
+        {% from 'bootstrap5/utils.html' import render_messages %}
+
+        {{ render_messages() }}
+
         {% block content %}
         {% endblock %}
+
     </main>
 
+
+    {{ bootstrap.load_js() }}
+
 </body>
+
 </html>

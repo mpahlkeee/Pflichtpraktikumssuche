@@ -51,16 +51,16 @@ header {
     color: #2563eb;
 }
 
-/* Registrierungsbutton */
+/* Login-Button */
 
-.nav-links .register-button {
+.nav-links .login-button {
     background-color: #2563eb;
     color: white;
     padding: 10px 16px;
     border-radius: 6px;
 }
 
-.nav-links .register-button:hover {
+.nav-links .login-button:hover {
     background-color: #1d4ed8;
     color: white;
 }

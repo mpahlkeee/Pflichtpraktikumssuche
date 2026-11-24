@@ -21,6 +21,10 @@ def create_app():
     def praktika():
         return render_template("praktika.html")
 
+    @app.route("/favoriten")
+    def favoriten():
+        return render_template("favoriten.html")
+
     @app.route("/login")
     def login():
         return render_template("login.html")

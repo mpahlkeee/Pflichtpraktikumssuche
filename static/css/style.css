@@ -1,23 +1,90 @@
+
 body {
-    background: #f7f8fa;
-    color: #192739;
-    font-family: system-ui, sans-serif;
-    line-height: 1.55;
-}
-
-.site-header {
-    background: #fff;
-    border-bottom: 1px solid #dce2e8;
-}
-
-.brand {
-    color: #164f47;
-    font-weight: 700;
-}
-
-h1 {
-    max-width: 25ch;
     margin: 0;
-    font-size: clamp(2rem, 6vw, 3.5rem);
-    line-height: 1.12;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+}
+
+/* Navigation */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Navigationslinks */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Registrierungsbutton */
+
+.nav-links .register-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+.nav-links .register-button:hover {
+    background-color: #1d4ed8;
+    color: white;
+}
+
+/* Seiteninhalt */
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+/* Smartphone */
+
+@media (max-width: 768px) {
+
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
 }

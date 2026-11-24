@@ -1,21 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Praktify{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pflichtpraktikumssuche</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
-    <header class="site-header">
-        <nav class="container navigation" aria-label="Hauptnavigation">
-            <a class="brand" href="{{ url_for('index') }}">Praktify</a>
-            {% block navigation %}{% endblock %}
+
+    <header>
+        <nav class="navigation">
+
+            <a href="{{ url_for('index') }}" class="logo">
+                Pflichtpraktikumssuche
+            </a>
+
+            <div class="nav-links">
+
+                <a href="{{ url_for('index') }}">
+                    Startseite
+                </a>
+
+                <a href="{{ url_for('praktika') }}">
+                    Praktika finden
+                </a>
+
+                <a href="{{ url_for('login') }}">
+                    Login
+                </a>
+
+                <a href="{{ url_for('register') }}" class="register-button">
+                    Registrieren
+                </a>
+
+            </div>
+
         </nav>
     </header>
-    <main class="container page">
-        {% block content %}{% endblock %}
+
+    <main>
+        {% block content %}
+        {% endblock %}
     </main>
+
 </body>
 </html>

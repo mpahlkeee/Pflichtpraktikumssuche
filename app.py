@@ -8,17 +8,28 @@ import db
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_mapping(
-        DATABASE=Path(app.root_path) / "database.db",
-        SECRET_KEY=os.environ.get("SECRET_KEY"),
-        SESSION_COOKIE_HTTPONLY=True,
-        SESSION_COOKIE_SAMESITE="Lax",
-    )
+
+    app.config["DATABASE"] = Path(app.root_path) / "database.db"
+
     db.init_app(app)
 
-    @app.get("/")
+    @app.route("/")
     def index():
         return render_template("index.html")
 
-    # Register feature blueprints here as they become available.
+    @app.route("/praktika")
+    def praktika():
+        return render_template("praktika.html")
+
+    @app.route("/login")
+    def login():
+        return render_template("login.html")
+
+    @app.route("/register")
+    def register():
+        return render_template("register.html")
+
     return app
+
+
+app = create_app()

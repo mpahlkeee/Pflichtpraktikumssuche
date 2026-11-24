@@ -85,10 +85,7 @@ Ich mache Portfolio **D** in unserem **4-Personen** Team.
 
 ## AI Directory
 
-[You must maintain a comprehensive AI Directory, as per [FB1 Regulations on Generative AI Use](../assets/pdf/FB1_KI_Regelung_DE_ENG.pdf). "Catch-all" disclosure (like "AI Tool used for bugfixing") is generally not sufficient. You may list an *AI Tool* multiple times, e.g., if you have used it for different purposes / in different parts of your project. Any use of Agentic AI is **strictly prohibited**.]
+| # | AI Tool | Purpose of Use | Affected Sections (Code + Docs) | Remarks, Procedure, Prompts |
+| --- | --- | --- | --- | --- |
+| 01 | ChatGPT | Identifikation relevanter Tätigkeitsbereiche für BWL-Praktika | Tätigkeitskategorien und Filterkriterien | Unterstützung bei der Sammlung und Strukturierung relevanter Tätigkeitsbereiche für Praktikumsanzeigen. Prompt: „Welche Tätigkeitsbereiche gibt es für BWL-Praktika? Erstelle mir eine Liste mit relevanten Begriffen.“ |
 
-| #   | AI Tool | Purpose of Use | Affected Sections (Code + Docs) | Remarks, Procedure, Prompts |
-| :-- | :--     | :--            | :--                             | :--                         |
-| 01  |         |                |                                 |                             |
-| 02  |         |                |                                 |                             |
-| ... |         |                |                                 |                             |

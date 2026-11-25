@@ -98,7 +98,7 @@ Ich mache Portfolio **D** in unserem **4-Personen** Team.
 
 ## Design Decisions that I led
 
-- [03: Eigene Stellenanzeigen für Unternehmen](dd-03.md)
+- [03: Eigene Stellenanzeigen für Unternehmen](https://github.com/mpahlkeee/Pflichtpraktikumssuche/blob/main/docs/design-decisions/dd-03.md)
 
 ---
 

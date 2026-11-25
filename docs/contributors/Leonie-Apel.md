@@ -41,19 +41,39 @@ Mir ist weiterhin bewusst, dass ich, sofern ich zur Erstellung dieser Arbeit KI-
 
 ## Vertical Feature Ownership
 
-[First, briefly describe the vertical feature(s) that you owned.
+### Erstellung und Verwaltung von Praktikumsanzeigen
 
-Next, provide a **step-by-step walkthrough** of owned vertical feature(s) that examiner can follow in app. Ensure this matches actually implemented functionality.
+Unternehmen können eigenständig Pflichtpraktikumsanzeigen auf unserer Plattform erstellen, bearbeiten und löschen. Dadurch wird das Angebot der über die API eingebundenen Stellenanzeigen ergänzt.
 
-**In addition**, supply ample proof of ownership, primarily through exemplary git commit traces. For every vertical feature you owned, maintain a table like this.]
+Das Feature umfasst die Implementierung der Backend-Logik, die Datenbankanbindung, die Erstellung der Benutzeroberflächen, die Validierung der Eingaben sowie die Überprüfung der Zugriffsberechtigungen.
+
+Zusätzlich wurden einheitliche BWL-spezifische Tätigkeitsbereiche definiert und zentral hinterlegt, um eine konsistente Kategorisierung der Praktikumsanzeigen zu ermöglichen.
+
+### Step-by-Step Walkthrough
+
+1. Als Unternehmen anmelden.
+2. Über die Navigation „Meine Anzeigen“ aufrufen.
+3. Eine neue Praktikumsanzeige erstellen.
+4. Die erforderlichen Angaben ausfüllen.
+5. Einen vordefinierten Tätigkeitsbereich auswählen.
+6. Die Praktikumsanzeige speichern.
+7. Die erstellte Anzeige unter „Meine Anzeigen“ aufrufen.
+8. Eine bestehende Anzeige bearbeiten und die Änderungen speichern.
+9. Eine bestehende Anzeige löschen.
+
+Unternehmen können ausschließlich ihre eigenen Praktikumsanzeigen bearbeiten und löschen. Der Standort ist auf Berlin beschränkt.
+
 
 | Activities | Proof, e.g., git commits | Sources used |
-| :-- | :-- | :-- |
-| [Design Challenge research] | [Research traces](../product-discovery/01-design-challenge.md#raw-materia) | See left |
-| [Refactor to use Flask Blueprints] | [d816e4](https://github.com/hwrberlin/fswd/commit/d816e4), [75a6c1](https://github.com/hwrberlin/fswd/commit/75a6c1) | [Flask Documentation](https://flask.palletsprojects.com/en/stable/blueprints/#the-concept-of-blueprints) |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+|---|---|---|
+| Implementierung der Erstellung, Bearbeitung und Löschung von Praktikumsanzeigen (CRUD) | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | [Flask Documentation](https://flask.palletsprojects.com/en/stable/) |
+| Datenbankanbindung und Speicherung der Praktikumsanzeigen | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | [Flask-SQLAlchemy Documentation](https://flask-sqlalchemy.palletsprojects.com/en/stable/) |
+| Erstellung der Benutzeroberflächen zur Anzeigenverwaltung | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/) |
+| Implementierung der Eingabevalidierung und Zugriffsberechtigungen | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | - |
+| Definition und Zentralisierung BWL-spezifischer Tätigkeitsbereiche | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | ChatGPT (siehe AI Directory) |
+| Anpassung der `.gitignore` | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | - |
+| Dokumentation der KI-Nutzung im AI Directory | [c7ddc59](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/c7ddc59) | - |
+| Integration des Features in den Main-Branch | [3fa2dd8](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3fa2dd8), [Pull Request #3](https://github.com/mpahlkeee/Pflichtpraktikumssuche/pull/3) | – |
 
 ---
 

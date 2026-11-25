@@ -1,11 +1,161 @@
- {% extends "base.html" %}
+{% extends "base.html" %}
 
 {% block content %}
 
-<h1>Registrierung</h1>
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
 
-<p>
-    Registrieren
-</p>
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+
+                    <h1 class="text-center mb-4">
+                        Registrierung
+                    </h1>
+
+                    <p class="text-center text-muted mb-4">
+                        Erstelle dein Konto bei Praktify.
+                    </p>
+
+                    <!-- Registrierungsformular -->
+                    <form method="POST">
+
+                        {{ form.csrf_token }}
+
+                        <!-- E-Mail -->
+                        <div class="mb-3">
+
+                            {{ form.email.label(class="form-label") }}
+
+                            {{ form.email(class="form-control",
+                                          placeholder="name@beispiel.de") }}
+
+                            {% for error in form.email.errors %}
+                                <div class="text-danger small mt-1">
+                                    {{ error }}
+                                </div>
+                            {% endfor %}
+
+                        </div>
+
+                        <!-- Rolle -->
+                        <div class="mb-3">
+
+                            {{ form.role.label(class="form-label") }}
+
+                            {{ form.role(class="form-select",
+                                         id="role") }}
+
+                            {% for error in form.role.errors %}
+                                <div class="text-danger small mt-1">
+                                    {{ error }}
+                                </div>
+                            {% endfor %}
+
+                        </div>
+
+                        <!-- Unternehmensname -->
+                        <div class="mb-3"
+                             id="company-field">
+
+                            {{ form.company_name.label(class="form-label") }}
+
+                            {{ form.company_name(class="form-control",
+                                                 placeholder="Unternehmensname") }}
+
+                            {% for error in form.company_name.errors %}
+                                <div class="text-danger small mt-1">
+                                    {{ error }}
+                                </div>
+                            {% endfor %}
+
+                        </div>
+
+                        <!-- Passwort -->
+                        <div class="mb-3">
+
+                            {{ form.password.label(class="form-label") }}
+
+                            {{ form.password(class="form-control",
+                                             placeholder="Mindestens 8 Zeichen") }}
+
+                            {% for error in form.password.errors %}
+                                <div class="text-danger small mt-1">
+                                    {{ error }}
+                                </div>
+                            {% endfor %}
+
+                        </div>
+
+                        <!-- Passwort wiederholen -->
+                        <div class="mb-3">
+
+                            {{ form.confirm_password.label(class="form-label") }}
+
+                            {{ form.confirm_password(class="form-control",
+                                                    placeholder="Passwort wiederholen") }}
+
+                            {% for error in form.confirm_password.errors %}
+                                <div class="text-danger small mt-1">
+                                    {{ error }}
+                                </div>
+                            {% endfor %}
+
+                        </div>
+
+                        <!-- Registrieren -->
+                        <div class="d-grid mt-4">
+
+                            {{ form.submit(class="btn btn-primary btn-lg") }}
+
+                        </div>
+
+                    </form>
+
+                    <!-- Login-Link -->
+                    <div class="text-center mt-4">
+
+                        <p class="mb-0">
+                            Du hast bereits ein Konto?
+                            <a href="{{ url_for('login') }}">
+                                Jetzt anmelden
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Unternehmensfeld abhängig von der Rolle anzeigen -->
+
+<script>
+
+    const roleSelect = document.getElementById("role");
+    const companyField = document.getElementById("company-field");
+
+    function updateCompanyField() {
+
+        if (roleSelect.value === "company") {
+
+            companyField.style.display = "block";
+
+        } else {
+
+            companyField.style.display = "none";
+
+        }
+    }
+
+    roleSelect.addEventListener("change", updateCompanyField);
+
+    updateCompanyField();
+
+</script>
 
 {% endblock %}

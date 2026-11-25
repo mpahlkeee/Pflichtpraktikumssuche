@@ -1,3 +1,4 @@
+
 from decimal import Decimal
 
 from flask_wtf import FlaskForm
@@ -9,6 +10,7 @@ from wtforms import (
     DateField,
     IntegerField,
     DecimalField,
+    PasswordField,
     SubmitField,
 )
 
@@ -18,10 +20,15 @@ from wtforms.validators import (
     NumberRange,
     URL,
     ValidationError,
+    Length,
+    EqualTo,
+    Regexp,
 )
 
 from values import CATEGORIES, WorkModel, CompensationStatus
 
+
+# Formular zum Erstellen und Bearbeiten von Praktikumsanzeigen
 
 class AnzeigeForm(FlaskForm):
 
@@ -176,6 +183,105 @@ class AnzeigeForm(FlaskForm):
             )
 
 
+# Formular zum Löschen einer Praktikumsanzeige
+
 class AnzeigeLoeschenForm(FlaskForm):
 
     submit = SubmitField("Löschen")
+
+
+# Loginformular
+
+class LoginForm(FlaskForm):
+
+    email = StringField(
+        "E-Mail",
+        validators=[
+            DataRequired(message="Bitte eine E-Mail-Adresse eingeben."),
+            Regexp(
+                r"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                message="Bitte eine gültige E-Mail-Adresse eingeben."
+            ),
+        ]
+    )
+
+    password = PasswordField(
+        "Passwort",
+        validators=[DataRequired(message="Bitte ein Passwort eingeben.")]
+    )
+
+    submit = SubmitField("Anmelden")
+
+
+# Registrierungsformular
+
+class RegistrierungForm(FlaskForm):
+
+    email = StringField(
+        "E-Mail",
+        validators=[
+            DataRequired(
+                message="Bitte eine E-Mail-Adresse eingeben."
+            ),
+            Regexp(
+                r"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                message="Bitte eine gültige E-Mail-Adresse eingeben."
+            ),
+        ]
+    )
+
+    role = SelectField(
+        "Ich registriere mich als",
+        choices=[
+            ("student", "Studierende/r"),
+            ("company", "Unternehmen"),
+        ],
+        validators=[
+            DataRequired(
+                message="Bitte eine Rolle auswählen."
+            )
+        ]
+    )
+
+    company_name = StringField(
+        "Unternehmensname"
+    )
+
+    password = PasswordField(
+        "Passwort",
+        validators=[
+            DataRequired(
+                message="Bitte ein Passwort eingeben."
+            ),
+            Length(
+                min=8,
+                message="Das Passwort muss mindestens 8 Zeichen lang sein."
+            ),
+        ]
+    )
+
+    confirm_password = PasswordField(
+        "Passwort wiederholen",
+        validators=[
+            DataRequired(
+                message="Bitte das Passwort wiederholen."
+            ),
+            EqualTo(
+                "password",
+                message="Die Passwörter stimmen nicht überein."
+            ),
+        ]
+    )
+
+    submit = SubmitField("Registrieren")
+
+
+    # Unternehmensname nur bei Unternehmen erforderlich
+
+    def validate_company_name(self, field):
+
+        if self.role.data == "company" and not (field.data or "").strip():
+
+            raise ValidationError(
+                "Bitte einen Unternehmensnamen eingeben."
+            )

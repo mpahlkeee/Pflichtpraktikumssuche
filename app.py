@@ -1,3 +1,4 @@
+
 import os
 from pathlib import Path
 
@@ -14,10 +15,20 @@ from flask import (
 
 from flask_bootstrap import Bootstrap5
 
+from werkzeug.security import (
+    generate_password_hash,
+    check_password_hash
+)
+
 from db import db
-from models import Category
+from models import Category, User, Company
 from values import CATEGORIES
-from forms import AnzeigeForm, AnzeigeLoeschenForm
+from forms import (
+    AnzeigeForm,
+    AnzeigeLoeschenForm,
+    LoginForm,
+    RegistrierungForm
+)
 
 from anzeigen import (
     unternehmen_abrufen,
@@ -33,7 +44,10 @@ from anzeigen import (
 
 app = Flask(__name__)
 
-app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
+app.config["SECRET_KEY"] = (
+    os.environ.get("SECRET_KEY")
+    or "dev-secret-key-change-me"
+)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = (
     f"sqlite:///{Path(app.root_path) / 'database.db'}"
@@ -93,16 +107,145 @@ def favoriten():
     return render_template("favoriten.html")
 
 
-@app.route("/login")
+# Login
+
+@app.route("/login", methods=["GET", "POST"])
 def login():
 
-    return render_template("login.html")
+    # Wenn der Nutzer bereits angemeldet ist,
+    # direkt zur Startseite weiterleiten
+    if session.get("user_id"):
+
+        return redirect(url_for("index"))
+
+    form = LoginForm()
+
+    if form.validate_on_submit():
+
+        email = form.email.data.strip().lower()
+
+        password = form.password.data
+
+        # Nutzer anhand der E-Mail suchen
+        user = User.query.filter_by(email=email).first()
+
+        # Login überprüfen
+        if user and check_password_hash(
+            user.password_hash,
+            password
+        ):
+
+            # Alte Session löschen
+            session.clear()
+
+            # Nutzer anmelden
+            session["user_id"] = user.id
+            session["role"] = user.role.value
+
+            flash(
+                "Du bist erfolgreich angemeldet!",
+                "success"
+            )
+
+            # Zur Startseite weiterleiten
+            return redirect(url_for("index"))
+
+        else:
+
+            flash(
+                "E-Mail oder Passwort ist falsch.",
+                "danger"
+            )
+
+    elif request.method == "POST":
+
+        flash("Bitte prüfe deine Eingaben.", "danger")
+
+    return render_template("login.html", form=form)
 
 
-@app.route("/register")
+# Registrierung
+
+@app.route("/register", methods=["GET", "POST"])
 def register():
 
-    return render_template("register.html")
+    # Wenn der Nutzer bereits angemeldet ist,
+    # direkt zur Startseite weiterleiten
+    if session.get("user_id"):
+
+        return redirect(url_for("index"))
+
+    form = RegistrierungForm()
+
+    if form.validate_on_submit():
+
+        email = form.email.data.strip().lower()
+
+        # Prüfen, ob die E-Mail bereits existiert
+        existing_user = User.query.filter_by(
+            email=email
+        ).first()
+
+        if existing_user:
+
+            flash(
+                "Diese E-Mail-Adresse ist bereits registriert.",
+                "danger"
+            )
+
+            return render_template(
+                "register.html",
+                form=form
+            )
+
+        # Passwort verschlüsseln
+        password_hash = generate_password_hash(
+            form.password.data
+        )
+
+        # Nutzer erstellen
+        user = User(
+            email=email,
+            password_hash=password_hash,
+            role=form.role.data
+        )
+
+        db.session.add(user)
+
+        db.session.flush()
+
+        # Falls sich ein Unternehmen registriert
+        if form.role.data == "company":
+
+            company = Company(
+                user_id=user.id,
+                name=form.company_name.data
+            )
+
+            db.session.add(company)
+
+        # Daten speichern
+        db.session.commit()
+
+        # Alte Session löschen
+        session.clear()
+
+        # Nutzer direkt anmelden
+        session["user_id"] = user.id
+        session["role"] = user.role.value
+
+        flash(
+            "Registrierung erfolgreich! Du bist jetzt angemeldet.",
+            "success"
+        )
+
+        # Zur Startseite weiterleiten
+        return redirect(url_for("index"))
+
+    return render_template(
+        "register.html",
+        form=form
+    )
 
 
 # Praktikumsanzeigen verwalten
@@ -113,6 +256,7 @@ def anzeigen_verwalten():
     user_id = session.get("user_id")
 
     if user_id is None:
+
         return redirect(url_for("login"))
 
     try:
@@ -123,11 +267,10 @@ def anzeigen_verwalten():
 
         abort(403)
 
-
     return render_template(
-    "anzeigen_verwalten.html",
-    anzeigen=anzeigen
-)
+        "anzeigen_verwalten.html",
+        anzeigen=anzeigen
+    )
 
 
 # Praktikumsanzeige erstellen
@@ -141,6 +284,7 @@ def erstellen():
     user_id = session.get("user_id")
 
     if user_id is None:
+
         return redirect(url_for("login"))
 
     try:
@@ -151,7 +295,10 @@ def erstellen():
 
         if request.method == "POST" and form.validate():
 
-            anzeige_erstellen(form, user_id)
+            anzeige_erstellen(
+                form,
+                user_id
+            )
 
             flash(
                 "Die Praktikumsanzeige wurde erstellt.",
@@ -183,6 +330,7 @@ def bearbeiten(anzeige_id):
     user_id = session.get("user_id")
 
     if user_id is None:
+
         return redirect(url_for("login"))
 
     try:
@@ -193,6 +341,7 @@ def bearbeiten(anzeige_id):
         )
 
         if anzeige is None:
+
             abort(404)
 
         if request.method == "POST":
@@ -240,6 +389,7 @@ def bearbeiten(anzeige_id):
         anzeige=anzeige
     )
 
+
 # Löschen einer Praktikumsanzeige bestätigen
 
 @app.route(
@@ -250,6 +400,7 @@ def loeschen_bestaetigen(anzeige_id):
     user_id = session.get("user_id")
 
     if user_id is None:
+
         return redirect(url_for("login"))
 
     try:
@@ -260,6 +411,7 @@ def loeschen_bestaetigen(anzeige_id):
         )
 
         if anzeige is None:
+
             abort(404)
 
     except PermissionError:
@@ -274,6 +426,7 @@ def loeschen_bestaetigen(anzeige_id):
         form=form
     )
 
+
 # Praktikumsanzeige löschen
 
 @app.route(
@@ -285,11 +438,13 @@ def loeschen(anzeige_id):
     user_id = session.get("user_id")
 
     if user_id is None:
+
         return redirect(url_for("login"))
 
     form = AnzeigeLoeschenForm()
 
     if not form.validate():
+
         abort(400)
 
     try:
@@ -315,3 +470,26 @@ def loeschen(anzeige_id):
     return redirect(
         url_for("anzeigen_verwalten")
     )
+
+
+# Logout
+
+@app.route("/logout")
+def logout():
+
+    # Session löschen
+    session.clear()
+
+    flash(
+        "Du wurdest erfolgreich abgemeldet.",
+        "success"
+    )
+
+    return redirect(url_for("index"))
+
+
+# Anwendung starten
+
+if __name__ == "__main__":
+
+    app.run(debug=True)

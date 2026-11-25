@@ -64,9 +64,16 @@
 
                     {% endif %}
 
-                    <a class="btn btn-primary btn-lg ms-lg-3" href="{{ url_for('login') }}">
-                       Login
-                    </a>
+                    {% if session.get("user_id") %}
+                        <a class="btn btn-outline-primary ms-lg-3" href="{{ url_for('logout') }}">
+                            Logout
+                        </a>
+                    {% else %}
+                        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                        <a class="btn btn-primary ms-lg-2" href="{{ url_for('register') }}">
+                            Registrieren
+                        </a>
+                    {% endif %}
 
                 </div>
 

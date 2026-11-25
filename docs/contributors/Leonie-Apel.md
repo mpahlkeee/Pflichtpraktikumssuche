@@ -98,8 +98,7 @@ Ich mache Portfolio **D** in unserem **4-Personen** Team.
 
 ## Design Decisions that I led
 
-- [00: Title](../design-decisions/dd-00.md)
-- [01: How to access the database - SQL or SQLAlchemy](../design-decisions/dd-01.md)
+- [03: Eigene Stellenanzeigen für Unternehmen](dd-03.md)
 
 ---
 

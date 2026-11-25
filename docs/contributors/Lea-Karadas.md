@@ -36,37 +36,35 @@ Mir ist weiterhin bewusst, dass ich, sofern ich zur Erstellung dieser Arbeit KI-
 
 ## Vertical Feature Ownership
 
-[First, briefly describe the vertical feature(s) that you owned.
+### Registrierung und Login
 
-Next, provide a **step-by-step walkthrough** of owned vertical feature(s) that examiner can follow in app. Ensure this matches actually implemented functionality.
+Ich war für die Implementierung der Registrierung und des Login-Systems von Praktify verantwortlich. Dazu gehörten die Registrierung von Studierenden und Unternehmen, die Anmeldung und Abmeldung, die sichere Speicherung von Passwörtern, die Sessionverwaltung sowie die Verwaltung der Benutzerrollen und Zugriffsrechte.
 
-**In addition**, supply ample proof of ownership, primarily through exemplary git commit traces. For every vertical feature you owned, maintain a table like this.]
+Nutzer können sich mit ihrer E-Mail-Adresse und ihrem Passwort registrieren und dabei ihre Rolle (Studierende oder Unternehmen) auswählen. Nach erfolgreicher Registrierung werden sie automatisch angemeldet und zur Startseite weitergeleitet. Bereits registrierte Nutzer können sich mit ihren Zugangsdaten anmelden und bleiben während der Nutzung der Anwendung eingeloggt. Außerdem können sie sich wieder abmelden. Passwörter werden mithilfe eines Hash-Verfahrens sicher gespeichert. Bestimmte Funktionen sind abhängig von der jeweiligen Benutzerrolle zugänglich.
 
-| Activities | Proof, e.g., git commits | Sources used |
-| :-- | :-- | :-- |
-| [Design Challenge research] | [Research traces](../product-discovery/01-design-challenge.md#raw-materia) | See left |
-| [Refactor to use Flask Blueprints] | [d816e4](https://github.com/hwrberlin/fswd/commit/d816e4), [75a6c1](https://github.com/hwrberlin/fswd/commit/75a6c1) | [Flask Documentation](https://flask.palletsprojects.com/en/stable/blueprints/#the-concept-of-blueprints) |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+### Schritt-für-Schritt-Durchführung in der App
 
----
+1. Praktify öffnen.
+2. Zur Registrierungsseite navigieren.
+3. Als Studierende oder Unternehmen registrieren.
+4. Nach erfolgreicher Registrierung wird man automatisch angemeldet und zur Startseite weitergeleitet.
+5. Mit einem bestehenden Account über die Login-Seite anmelden.
+6. Prüfen, ob man während der Navigation durch die Anwendung angemeldet bleibt.
+7. Über die Logout-Funktion abmelden.
 
-## Portfolio Ownership
 
-Ich mache Portfolio **B** in unserem **4-Personen** Team.
-**In addition**, supply ample proof of ownership, primarily through work diary entries, git commit traces, and other useful artifacts. Maintain a table like this.]
+## Nachweis der Eigenleistung
 
-| Portfolio Task | Proof |
-| :-- | :-- |
-| **Discovery Process** | |
-| Plan discovery activities | [Discovery Plan](../product-discovery/material/02-up/.todo) |
-| Maintain discovery evidence | *01.11.:* I reminded everybody to upload their discovery evidence |
-| | *05.11.:* I checked all uploads for completeness |
-**API** | |
-| Integrate API behavior | [74a6b7](https://github.com/hwrberlin/fswd/commit/74a6b7) |
-| | |
-| | |
+| Aktivitäten | Nachweis, z. B. Git-Commits | Verwendete Quellen |
+| --- | --- | --- |
+| Registrierung von Studierenden | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials und Flask-Dokumentation |
+| Registrierung von Unternehmen | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials und Flask-Dokumentation |
+| Login und Authentifizierung | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials und Flask-Dokumentation |
+| Sichere Passwortspeicherung | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials |
+| Sessionverwaltung | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials und Flask-Dokumentation |
+| Logout-Funktion | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials und Flask-Dokumentation |
+| Benutzerrollen und Zugriffsrechte | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials |
+| Login- und Registrierungsoberfläche | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials und HTML-Dokumentation | | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Flask-Dokumentation |
 
 ---
 
@@ -79,10 +77,9 @@ Ich mache Portfolio **B** in unserem **4-Personen** Team.
 
 ## AI Directory
 
-[You must maintain a comprehensive AI Directory, as per [FB1 Regulations on Generative AI Use](../assets/pdf/FB1_KI_Regelung_DE_ENG.pdf). "Catch-all" disclosure (like "AI Tool used for bugfixing") is generally not sufficient. You may list an *AI Tool* multiple times, e.g., if you have used it for different purposes / in different parts of your project. Any use of Agentic AI is **strictly prohibited**.]
-
-| #   | AI Tool | Purpose of Use | Affected Sections (Code + Docs) | Remarks, Procedure, Prompts |
-| :-- | :--     | :--            | :--                             | :--                         |
-| 01  |         |                |                                 |                             |
-| 02  |         |                |                                 |                             |
-| ... |         |                |                                 |                             |
+| # | AI Tool | Purpose of Use | Affected Sections (Code + Docs) | Remarks, Procedure, Prompts |
+|---|---|---|---|---|
+| 01 | ChatGPT | Unterstützung beim Verständnis der Funktionsweise von Flask-Routen und der Umsetzung von Login und Registrierung | `app.py`, `forms.py` | ChatGPT wurde verwendet, um die Funktionsweise von Flask-Routen, GET- und POST-Anfragen sowie die Formularverarbeitung zu erklären. Der Code wurde selbstständig geschrieben und mithilfe der Erklärungen umgesetzt. Prompt: „Kannst du mir erklären, wie eine Login- und Registrierungsfunktion in Flask aufgebaut ist und welche Schritte bei einer Anmeldung durchgeführt werden?“ |
+| 02 | ChatGPT | Unterstützung bei der Fehlersuche im Login- und Registrierungsprozess | `app.py`, `login.html`, `register.html` | Bei auftretenden Problemen wurden Fehlverhalten und Fehlermeldungen beschrieben, um mögliche Ursachen zu verstehen und Lösungsansätze zu erhalten. Die vorgeschlagenen Lösungen wurden selbst überprüft und umgesetzt. Prompt: „Nach der Registrierung werde ich direkt wieder zur Login-Seite weitergeleitet. Ich möchte stattdessen, dass der Nutzer automatisch angemeldet wird und auf die Startseite gelangt. Woran könnte das liegen?“ |
+| 03 | ChatGPT | Unterstützung beim Verständnis der Benutzerrollen und rollenabhängigen Zugriffsrechte | `app.py`, `base.html` | ChatGPT wurde zur Erklärung der Unterscheidung zwischen Studierenden und Unternehmen sowie der rollenabhängigen Darstellung von Navigationselementen und Funktionen verwendet. Die Umsetzung erfolgte selbstständig. Prompt: „Wie kann ich in Flask zwischen Studierenden und Unternehmen unterscheiden und dafür sorgen, dass bestimmte Navigationselemente oder Funktionen nur für die jeweilige Benutzerrolle angezeigt werden?“ |
+| 04 | ChatGPT | Unterstützung bei der Formulierung und Strukturierung der Projektdokumentation | `docs/design-decisions/README.md`, AI Directory | ChatGPT wurde zur sprachlichen Überarbeitung und Strukturierung der Beschreibung der eigenen Implementierung sowie zur Unterstützung bei der Dokumentation der Eigenleistung verwendet. Prompt: „Kannst du die Beschreibung meiner Implementierung von Login und Registrierung verständlicher und strukturierter formulieren, ohne die technischen Inhalte zu verändern?“ |

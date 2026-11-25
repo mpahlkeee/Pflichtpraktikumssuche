@@ -1,13 +1,28 @@
-__pycache__/
-*.pyc
-venv/
-instance/
-.env
-.DS_Store
+# Temporäre Dateien
 .tmp/
 *.tmp
 *~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtuelle Umgebung
+.venv/
+venv/
+
+# Sensible Konfigurationsdateien
+.env
+.env.local
+
+# macOS
+.DS_Store
+
+# SQLite-Hilfsdateien
 /database.db-journal
 /database.db-wal
 /database.db-shm
+
+# Gemeinsame Datenbank
 !/database.db

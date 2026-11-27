@@ -38,7 +38,6 @@ Mir ist bewusst, dass folgendes als Täuschungsversuch gewertet wird und zu eine
 Mir ist weiterhin bewusst, dass ich, sofern ich zur Erstellung dieser Arbeit KI-basierte Hilfsmittel verwendet habe, die Verantwortung für eventuell durch die KI generierte fehlerhafte oder verzerrte Inhalte, fehlerhafte Referenzen, Verstöße gegen das Datenschutz- und Urheberrecht oder Plagiate trage.
 
 ---
-
 ## Vertical Feature Ownership
 
 ### Erstellung und Verwaltung von Praktikumsanzeigen
@@ -49,7 +48,7 @@ Das Feature umfasst die Implementierung der Backend-Logik, die Datenbankanbindun
 
 Zusätzlich wurden einheitliche BWL-spezifische Tätigkeitsbereiche definiert und zentral hinterlegt, um eine konsistente Kategorisierung der Praktikumsanzeigen zu ermöglichen.
 
-### Step-by-Step Walkthrough
+#### Step-by-Step Walkthrough
 
 1. Als Unternehmen anmelden.
 2. Über die Navigation „Meine Anzeigen“ aufrufen.
@@ -63,17 +62,50 @@ Zusätzlich wurden einheitliche BWL-spezifische Tätigkeitsbereiche definiert un
 
 Unternehmen können ausschließlich ihre eigenen Praktikumsanzeigen bearbeiten und löschen. Der Standort ist auf Berlin beschränkt.
 
+### Erstellung und Verwaltung von Unternehmensprofilen
+
+Unternehmen verfügen über ein öffentlich zugängliches Unternehmensprofil, auf dem der Unternehmensname, eine optionale Unternehmensbeschreibung sowie alle selbst veröffentlichten Praktikumsanzeigen dargestellt werden.
+
+Unternehmen können ihr eigenes Profil bearbeiten und ihre Unternehmensinformationen aktualisieren. Der Unternehmensname wird über die bestehende Datenbankbeziehung automatisch in den zugehörigen Praktikumsanzeigen übernommen. Dadurch wird eine redundante Speicherung vermieden.
+
+Das Feature umfasst die Implementierung der Backend-Logik, die Nutzung bestehender Datenbankbeziehungen, die Erstellung der Benutzeroberflächen, die Eingabevalidierung sowie die Überprüfung der Zugriffsberechtigungen.
+
+Zusätzlich wurde die bestehende Anzeigenverwaltung erweitert, sodass der aktuelle Unternehmensname unter dem jeweiligen Anzeigentitel dargestellt wird.
+
+#### Step-by-Step Walkthrough
+
+1. Als Unternehmen anmelden.
+2. Über die Navigation „Unternehmensprofil“ aufrufen.
+3. Das eigene Unternehmensprofil und die veröffentlichten Praktikumsanzeigen einsehen.
+4. „Profil bearbeiten“ auswählen.
+5. Den Unternehmensnamen bearbeiten.
+6. Optional eine Unternehmensbeschreibung hinzufügen, bearbeiten oder entfernen.
+7. Die Änderungen speichern.
+8. Das aktualisierte Unternehmensprofil einsehen.
+9. Unter „Meine Anzeigen“ die automatische Übernahme des aktualisierten Unternehmensnamens überprüfen.
+
+Unternehmensprofile sind öffentlich zugänglich, können jedoch ausschließlich durch das jeweils zugehörige Unternehmenskonto bearbeitet werden. Der Unternehmensname ist verpflichtend, während die Unternehmensbeschreibung optional ist.
+
+Die Verlinkung von der Praktikumsdetailseite zum Unternehmensprofil erfolgt zu einem späteren Zeitpunkt. Die öffentliche Praktikumsübersicht bleibt unverändert.
+
+### Activities and Proof
 
 | Activities | Proof, e.g., git commits | Sources used |
 |---|---|---|
 | Implementierung der Erstellung, Bearbeitung und Löschung von Praktikumsanzeigen (CRUD) | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | [Flask Documentation](https://flask.palletsprojects.com/en/stable/) |
 | Datenbankanbindung und Speicherung der Praktikumsanzeigen | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | [Flask-SQLAlchemy Documentation](https://flask-sqlalchemy.palletsprojects.com/en/stable/) |
 | Erstellung der Benutzeroberflächen zur Anzeigenverwaltung | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/) |
-| Implementierung der Eingabevalidierung und Zugriffsberechtigungen | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | - |
+| Implementierung der Eingabevalidierung und Zugriffsberechtigungen für Praktikumsanzeigen | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | – |
 | Definition und Zentralisierung BWL-spezifischer Tätigkeitsbereiche | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | ChatGPT (siehe AI Directory) |
-| Anpassung der `.gitignore` | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | - |
-| Dokumentation der KI-Nutzung im AI Directory | [c7ddc59](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/c7ddc59) | - |
-| Integration des Features in den Main-Branch | [3fa2dd8](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3fa2dd8), [Pull Request #3](https://github.com/mpahlkeee/Pflichtpraktikumssuche/pull/3) | – |
+| Anpassung der `.gitignore` | [a7a6f36](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/a7a6f36) | – |
+| Dokumentation der KI-Nutzung im AI Directory | [c7ddc59](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/c7ddc59) | – |
+| Integration der Anzeigenverwaltung in den Main-Branch | [3fa2dd8](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3fa2dd8), [Pull Request #3](https://github.com/mpahlkeee/Pflichtpraktikumssuche/pull/3) | – |
+| Implementierung der Backend-Logik und Flask-Routen für die Anzeige und Bearbeitung von Unternehmensprofilen | [2853dc5](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/2853dc5) | [HWR – Full Stack Web Development](https://hwrberlin.github.io/fswd/) |
+| Nutzung bestehender Datenbankbeziehungen zur automatischen Zuordnung der Praktikumsanzeigen zu Unternehmensprofilen | [2853dc5](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/2853dc5) | [HWR – Full Stack Web Development](https://hwrberlin.github.io/fswd/) |
+| Erstellung der Benutzeroberflächen für Unternehmensprofile und Profilbearbeitung | [2853dc5](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/2853dc5) | [HWR – Full Stack Web Development](https://hwrberlin.github.io/fswd/) |
+| Erweiterung der Navigation um den Menüpunkt „Unternehmensprofil“ | [2853dc5](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/2853dc5) | – |
+| Erweiterung der Anzeigenverwaltung um den automatisch übernommenen Unternehmensnamen | [2853dc5](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/2853dc5) | – |
+| Integration der Unternehmensprofile in den Main-Branch | [5517b58](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/5517b58), [Pull Request #4](https://github.com/mpahlkeee/Pflichtpraktikumssuche/pull/4) | – |
 
 ---
 

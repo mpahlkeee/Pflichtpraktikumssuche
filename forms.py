@@ -183,6 +183,22 @@ class AnzeigeForm(FlaskForm):
             )
 
 
+# Formular zum Bearbeiten des Unternehmensprofils
+
+class UnternehmensprofilForm(FlaskForm):
+
+    name = StringField(
+        "Unternehmensname",
+        validators=[
+            DataRequired(message="Bitte einen Unternehmensnamen eingeben.")
+        ]
+    )
+
+    description = TextAreaField("Unternehmensbeschreibung (optional)")
+
+    submit = SubmitField("Änderungen speichern")
+
+
 # Formular zum Löschen einer Praktikumsanzeige
 
 class AnzeigeLoeschenForm(FlaskForm):

@@ -22,17 +22,19 @@ from werkzeug.security import (
 
 from db import db
 from models import Category, User, Company
-from values import CATEGORIES
+from values import CATEGORIES, Role
 from forms import (
     AnzeigeForm,
     AnzeigeLoeschenForm,
     LoginForm,
-    RegistrierungForm
+    RegistrierungForm,
+    UnternehmensprofilForm
 )
 
 from anzeigen import (
     unternehmen_abrufen,
     anzeigen_abrufen,
+    direkte_anzeigen_abrufen,
     anzeige_abrufen,
     anzeige_erstellen,
     anzeige_bearbeiten,
@@ -245,6 +247,81 @@ def register():
     return render_template(
         "register.html",
         form=form
+    )
+
+
+# Unternehmensprofil
+
+@app.route("/unternehmen/profil")
+def eigenes_unternehmensprofil():
+
+    user_id = session.get("user_id")
+
+    if user_id is None:
+        return redirect(url_for("login"))
+
+    try:
+        unternehmen = unternehmen_abrufen(user_id)
+    except PermissionError:
+        abort(403)
+
+    return redirect(
+        url_for("unternehmensprofil", unternehmen_id=unternehmen.id)
+    )
+
+
+@app.route("/unternehmen/<int:unternehmen_id>")
+def unternehmensprofil(unternehmen_id):
+
+    unternehmen = db.session.get(Company, unternehmen_id)
+
+    if unternehmen is None:
+        abort(404)
+
+    ist_eigenes_profil = (
+        session.get("user_id") == unternehmen.user_id
+        and unternehmen.user.role == Role.COMPANY
+    )
+
+    return render_template(
+        "unternehmen.html",
+        unternehmen=unternehmen,
+        anzeigen=direkte_anzeigen_abrufen(unternehmen.id),
+        ist_eigenes_profil=ist_eigenes_profil
+    )
+
+
+@app.route("/unternehmen/profil/bearbeiten", methods=["GET", "POST"])
+def unternehmensprofil_bearbeiten():
+
+    user_id = session.get("user_id")
+
+    if user_id is None:
+        return redirect(url_for("login"))
+
+    try:
+        unternehmen = unternehmen_abrufen(user_id)
+    except PermissionError:
+        abort(403)
+
+    form = UnternehmensprofilForm(obj=unternehmen)
+
+    if form.validate_on_submit():
+        unternehmen.name = form.name.data.strip()
+        unternehmen.description = (form.description.data or "").strip() or None
+
+        db.session.commit()
+
+        flash("Das Unternehmensprofil wurde gespeichert.", "success")
+
+        return redirect(
+            url_for("unternehmensprofil", unternehmen_id=unternehmen.id)
+        )
+
+    return render_template(
+        "unternehmen_bearbeiten.html",
+        form=form,
+        unternehmen=unternehmen
     )
 
 

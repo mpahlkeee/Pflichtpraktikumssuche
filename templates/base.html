@@ -64,6 +64,11 @@
                             Meine Anzeigen
                         </a>
 
+                        <a class="nav-link"
+                           href="{{ url_for('eigenes_unternehmensprofil') }}">
+                            Unternehmensprofil
+                        </a>
+
                     {% endif %}
 
                     {% if session.get("user_id") %}

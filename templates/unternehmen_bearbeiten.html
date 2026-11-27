@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_field %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <h1 class="mb-4">Unternehmensprofil bearbeiten</h1>
+
+        <form action="{{ url_for('unternehmensprofil_bearbeiten') }}"
+              method="post">
+            {{ form.csrf_token }}
+
+            {% for error in form.csrf_token.errors %}
+                <div class="alert alert-danger">{{ error }}</div>
+            {% endfor %}
+
+            {{ render_field(form.name) }}
+            {{ render_field(form.description, rows=5) }}
+
+            <div class="d-flex gap-2 mt-4">
+                {{ form.submit(class="btn btn-primary") }}
+
+                <a class="btn btn-secondary"
+                   href="{{ url_for('unternehmensprofil', unternehmen_id=unternehmen.id) }}">
+                    Abbrechen
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

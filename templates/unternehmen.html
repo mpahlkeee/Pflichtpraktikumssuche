@@ -2,10 +2,33 @@
 
 {% block content %}
 
-<h1>Unternehmensprofil</h1>
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+    <h1 class="mb-0">{{ unternehmen.name }}</h1>
 
-<p>
-    Unternehmensdaten
-</p>
+    {% if ist_eigenes_profil %}
+        <a class="btn btn-outline-primary"
+           href="{{ url_for('unternehmensprofil_bearbeiten') }}">
+            Profil bearbeiten
+        </a>
+    {% endif %}
+</div>
+
+{% if unternehmen.description %}
+    <p>{{ unternehmen.description }}</p>
+{% endif %}
+
+<h2 class="h4 mt-4">Praktikumsanzeigen</h2>
+
+{% for anzeige in anzeigen %}
+    <article class="card mb-3">
+        <div class="card-body">
+            <h3 class="card-title h5">{{ anzeige.title }}</h3>
+            <p class="mb-1">{{ anzeige.company.name }}</p>
+            <p class="text-muted mb-0">{{ anzeige.location }}</p>
+        </div>
+    </article>
+{% else %}
+    <p>Dieses Unternehmen hat noch keine Praktikumsanzeigen veröffentlicht.</p>
+{% endfor %}
 
 {% endblock %}

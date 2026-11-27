@@ -49,8 +49,7 @@ Nutzer können sich mit ihrer E-Mail-Adresse und ihrem Passwort registrieren und
 3. Als Studierende oder Unternehmen registrieren.
 4. Nach erfolgreicher Registrierung wird man automatisch angemeldet und zur Startseite weitergeleitet.
 5. Mit einem bestehenden Account über die Login-Seite anmelden.
-6. Prüfen, ob man während der Navigation durch die Anwendung angemeldet bleibt.
-7. Über die Logout-Funktion abmelden.
+6. Über die Logout-Funktion abmelden.
 
 
 ## Nachweis der Eigenleistung
@@ -65,7 +64,8 @@ Nutzer können sich mit ihrer E-Mail-Adresse und ihrem Passwort registrieren und
 | Logout-Funktion | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials und Flask-Dokumentation |
 | Benutzerrollen und Zugriffsrechte | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials |
 | Login- und Registrierungsoberfläche | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Projekt-Tutorials und HTML-Dokumentation | | [Commit 3b49796](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/3b49796) | Flask-Dokumentation |
-
+| Rollenabhängige Navigation | [Commit e7332cc](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/e7332cc) | Projekt-Tutorials und bestehende Projektstruktur |
+| Anpassung der Navigation für Unternehmen (Entfernung der Favoriten) | [Commit e7332cc](https://github.com/mpahlkeee/Pflichtpraktikumssuche/commit/e7332cc) | Bestehende Projektstruktur und Benutzerrollen |
 ---
 
 ## Design Decisions that I led

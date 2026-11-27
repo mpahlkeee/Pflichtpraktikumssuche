@@ -43,8 +43,7 @@
 
                             {{ form.role.label(class="form-label") }}
 
-                            {{ form.role(class="form-select",
-                                         id="role") }}
+                            {{ form.role(class="form-select") }}
 
                             {% for error in form.role.errors %}
                                 <div class="text-danger small mt-1">
@@ -55,13 +54,17 @@
                         </div>
 
                         <!-- Unternehmensname -->
-                        <div class="mb-3"
-                             id="company-field">
+                        <div class="mb-3">
 
                             {{ form.company_name.label(class="form-label") }}
 
                             {{ form.company_name(class="form-control",
                                                  placeholder="Unternehmensname") }}
+
+                            <div class="form-text">
+                                Nur für Unternehmen erforderlich.
+                                Studierende lassen dieses Feld frei.
+                            </div>
 
                             {% for error in form.company_name.errors %}
                                 <div class="text-danger small mt-1">
@@ -130,32 +133,5 @@
         </div>
     </div>
 </div>
-
-
-<!-- Unternehmensfeld abhängig von der Rolle anzeigen -->
-
-<script>
-
-    const roleSelect = document.getElementById("role");
-    const companyField = document.getElementById("company-field");
-
-    function updateCompanyField() {
-
-        if (roleSelect.value === "company") {
-
-            companyField.style.display = "block";
-
-        } else {
-
-            companyField.style.display = "none";
-
-        }
-    }
-
-    roleSelect.addEventListener("change", updateCompanyField);
-
-    updateCompanyField();
-
-</script>
 
 {% endblock %}

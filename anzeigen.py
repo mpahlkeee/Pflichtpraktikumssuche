@@ -94,22 +94,27 @@ def anzeige_erstellen(form, user_id):
     return anzeige
 
 
+# Direkt veröffentlichte Anzeigen eines Unternehmens abrufen
+
+def direkte_anzeigen_abrufen(unternehmen_id):
+
+    return db.session.execute(
+        db.select(Internship)
+        .filter_by(
+            company_id=unternehmen_id,
+            source=Source.DIRECT
+        )
+        .order_by(Internship.id.desc())
+    ).scalars().all()
+
+
 # Alle eigenen Anzeigen abrufen
 
 def anzeigen_abrufen(user_id):
 
     unternehmen = unternehmen_abrufen(user_id)
 
-    anzeigen = db.session.execute(
-        db.select(Internship)
-        .filter_by(
-            company_id=unternehmen.id,
-            source=Source.DIRECT
-        )
-        .order_by(Internship.id.desc())
-    ).scalars().all()
-
-    return anzeigen
+    return direkte_anzeigen_abrufen(unternehmen.id)
 
 
 # Einzelne eigene Anzeige abrufen
